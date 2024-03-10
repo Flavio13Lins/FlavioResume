@@ -34,7 +34,7 @@ const Footer = (props) => {
     instagram,
     linkedIn,
     medium,
-    name,
+    fullName,
     primaryColor,
     twitter,
     youTube,
@@ -65,6 +65,15 @@ const Footer = (props) => {
             <img src={envelopeIcon} alt="email" className="socialIcon" />
           </a>
         )}
+        {linkedIn && (
+          <a
+            href={`https://www.linkedin.com/in/${linkedIn}`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={linkedInIcon} alt="LinkedIn" className="socialIcon" />
+          </a>
+        )}
         {devDotTo && (
           <a href={`https://dev.to/${devDotTo}`} target="_blank" rel="noopener noreferrer">
             <img src={devDotToIcon} alt="Dev.to" className="socialIcon" />
@@ -82,15 +91,6 @@ const Footer = (props) => {
             rel="noopener noreferrer"
           >
             <img src={instagramIcon} alt="Instagram" className="socialIcon" />
-          </a>
-        )}
-        {linkedIn && (
-          <a
-            href={`https://www.linkedin.com/in/${linkedIn}`}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src={linkedInIcon} alt="LinkedIn" className="socialIcon" />
           </a>
         )}
         {medium && (
@@ -114,14 +114,14 @@ const Footer = (props) => {
         )}
       </div>
       <p className="small" style={{ marginTop: 0, color: "white" }}>
-        Created by {name}
+        Created by {fullName}
       </p>
     </div>
   );
 };
 
 Footer.defaultProps = {
-  name: "",
+  fullName: "",
 };
 
 Footer.propTypes = {
@@ -131,7 +131,7 @@ Footer.propTypes = {
   instagram: PropTypes.string,
   linkedIn: PropTypes.string,
   medium: PropTypes.string,
-  name: PropTypes.string.isRequired,
+  fullName: PropTypes.string.isRequired,
   primaryColor: PropTypes.string,
   twitter: PropTypes.string,
   youTube: PropTypes.string,

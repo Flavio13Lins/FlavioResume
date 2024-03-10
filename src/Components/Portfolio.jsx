@@ -19,9 +19,10 @@ import React from "react";
  * Need an image? Check out https://unsplash.com to download a photo you
  * freely use on your site.
  */
-import image from "../images/design-desk.jpeg";
 
-const imageAltText = "desktop with books and laptop";
+import image from "../images/projects-collage.png";
+
+const imageAltText = "Images of my developed projects.";
 
 /**
  * Project list
@@ -31,28 +32,40 @@ const imageAltText = "desktop with books and laptop";
  */
 const projectList = [
   {
-    title: "10 Things To Know About Azure Static Web Apps 🎉",
+    title: "XGBoost analysis in stock market 📈",
     description:
-      "Collaboration to create a beginner friendly article to help explain Azure Static Web Apps and tooling to get started.",
-    url: "https://dev.to/azure/10-things-to-know-about-azure-static-web-apps-3n4i",
+      "In my course completion thesis I wrote about data analysis using XGBoost with Python in the stock market. The technique is used with the intention of improving results in a Day Trading system. Data from the last 5 or more days of any stock are used as input to the system to find the accuracy of the predicted maximum and minimum values.",
+    url: "https://repositorio.ufpe.br/handle/123456789/52689",
   },
   {
-    title: "Web Development for Beginners",
+    title: "Deep Fit 🏋️‍♂️",
     description:
-      "Contributed sketch note imagery to accompany each lesson. These help provide visual representation of what is being taught.",
-    url: "https://github.com/microsoft/web-dev-for-beginners",
+      "DeepFIT is a mobile platform that helps Personal Trainers to improve their students' performance through insights generated from the data of their Wearables. The main proposal is to help personal trainers to increase their clients' satisfaction through personalised training recommendations created from their students' wearable data.",
+    url: "https://deep-fit.netlify.app/",
   },
   {
-    title: "My Resume Site",
+    title: "Climate Change Analysis 🌦",
     description:
-      "Created from Microsoft's resume workshop and deployed to GitHub pages. Includes my experience and design abilities.",
-    url: "https://github.com/microsoft/workshop-library/tree/main/full/build-resume-website",
+    "This a data analysis project using Kaggle's database as source. Checking from 1750 to 2013 the average temperatures around the world, we can say that there is a sufficient sample of data for real concerns about global warming.",
+    url: "https://github.com/Flavio13Lins/Kaggle-ClimateChange",
   },
   {
-    title: "GitHub Codespaces and github.dev",
+    title: "Tic Tac Toe Game 🎮",
     description:
-      "Video interview to explain when to use GitHub.dev versus GitHub Codespaces, and how best to use each tool.",
-    url: "https://www.youtube.com/watch?v=c3hHhRME_XI",
+      "This is a project to put into practice some of my abilities and training while having fun. The main idea here is to recognize the best pattern in a tic-tac-toe game. Making it impossible to win. I mapped the player's possible moves, finding the solution with reflect or rotations functions to the table if necessary.",
+    url: "https://flavio13lins-tic-tac-toe.netlify.app/",
+  },
+  {
+    title: "Initial Value Problem 🧮",
+    description:
+    "This is a problem solver prompt using Python. It was developed with the objective of implementing a list of numerical methods (eg Inverse Euler, Runge-Kutta, Adam-Multon) to solve a differential equation. The project has a documentation for better understanding.",
+    url: "https://github.com/Flavio13Lins/Numerical-Methods",
+  },
+  {
+    title: "Busca Aí 🌎",
+    description:
+    "Busca Aí is a simple application created in Vue.js with the essence of PWA, just as a practical test of development. The main objective was to create a website where people share their experiences anonymously when visiting places in the world.",
+    url: "https://busca-ai-web-hosting.firebaseapp.com/",
   },
 ];
 
@@ -60,11 +73,11 @@ const Portfolio = () => {
   return (
     <section className="padding" id="portfolio">
       <h2 style={{ textAlign: "center" }}>Portfolio</h2>
-      <div style={{ display: "flex", flexDirection: "row", paddingTop: "3rem" }}>
-        <div style={{ maxWidth: "40%", alignSelf: "center" }}>
+      <div className="portfolio-container">
+        <div style={{ maxWidth: "60%", alignSelf: "center" }}>
           <img
             src={image}
-            style={{ height: "90%", width: "100%", objectFit: "cover" }}
+            style={{ height: "100%", width: "100%", objectFit: "cover" }}
             alt={imageAltText}
           />
         </div>
@@ -72,7 +85,7 @@ const Portfolio = () => {
           {projectList.map((project) => (
             <div className="box" key={project.title}>
               <a href={project.url} target="_blank" rel="noopener noreferrer">
-                <h3 style={{ flexBasis: "40px" }}>{project.title}</h3>
+                <h3 style={{ flexBasis: "20px" }}>{project.title}</h3>
               </a>
               <p className="small">{project.description}</p>
             </div>
