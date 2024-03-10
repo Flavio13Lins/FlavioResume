@@ -1,25 +1,22 @@
 {
-  "name": "educator-js-codespace-template",
-  "version": "1.0.0",
-  "description": "Educator JS Codespace Template",
+  "name": "flavio13lins-educator-js-codespace-template",
+  "version": "2.0.0",
+  "description": "Resume Template",
   "source": "src/index.html",
-  "homepage": "https://github.com/microsoft/codespaces-teaching-template-js#readme",
+  "homepage": "http://flavio13lins.github.io/FlavioResume/",
   "scripts": {
     "start": "parcel",
     "build": "parcel build",
-    "build-gh": "parcel build --public-url 'https://{github-username}.github.io/{repo-name}'",
+    "build-gh": "parcel build --public-url 'https://flavio13lins.github.io/FlavioResume'",
     "predeploy": "npm run build-gh",
     "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/microsoft/codespaces-teaching-template-js.git"
+    "url": "git+https://github.com/Flavio13Lins/FlavioResume.git"
   },
-  "author": "Microsoft",
+  "author": "Flavio13Lins",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/microsoft/codespaces-teaching-template-js/issues"
-  },
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
