@@ -102,9 +102,9 @@ img.socialIcon {
 }
 
 .skills-container {
-  textAlign: "left";
+  text-align: "left";
   columns: 2;
-  fontSize: "1.25rem";
+  font-size: "1.25rem";
   margin: "2rem 3rem";
   gap: "3rem";
 }
@@ -153,9 +153,9 @@ img.socialIcon {
   }
 
   .skills-container {
-    textAlign: "left";
+    text-align: "left";
     columns: 1;
-    fontSize: "1.25rem";
+    font-size: "1.25rem";
     margin: "2rem 3rem";
     gap: "3rem";
   }
