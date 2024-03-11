@@ -1,9 +1,9 @@
 {
   "name": "flavio13lins-educator-js-codespace-template",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "description": "Resume Template",
   "source": "src/index.html",
-  "homepage": "http://flavio13lins.github.io/FlavioResume/",
+  "homepage": "https://flavio13lins.github.io/FlavioResume/",
   "scripts": {
     "start": "parcel",
     "build": "parcel build",
