@@ -30,7 +30,7 @@ const Home = ({ shortName, title }) => {
     <section id="home" className="min-height">
       <img className="background" src={image} alt="" />
       <div style={{ position: "absolute", top: "5rem", left: "2rem", width: "30rem" }}>
-        <h1>{shortName}</h1>
+        <h1 className="name-home">{shortName}</h1>
         <h2 className="title-home">{title}</h2>
       </div>
       <div style={{ position: "absolute", bottom: "3rem", left: "50%" }}>

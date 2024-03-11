@@ -74,7 +74,7 @@ const Portfolio = () => {
     <section className="padding" id="portfolio">
       <h2 style={{ textAlign: "center" }}>Portfolio</h2>
       <div className="portfolio-container">
-        <div style={{ maxWidth: "60%", alignSelf: "center" }}>
+        <div style={{ margin: "20px", alignSelf: "center" }}>
           <img
             src={image}
             style={{ height: "100%", width: "100%", objectFit: "cover" }}

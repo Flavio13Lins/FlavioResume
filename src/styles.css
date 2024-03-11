@@ -24,7 +24,6 @@ section {
   position: relative;
   width: 100vw;
 }
-
 section.min-height {
   min-height: 100vh;
 }
@@ -107,6 +106,14 @@ img.socialIcon {
   width: 30px;
 }
 
+.title-home {
+  color: aliceblue;
+  font-weight: 600;
+}
+.name-home {
+  color: aliceblue;
+}
+
 .skills-container {
   text-align: "left";
   columns: 2;
@@ -141,7 +148,7 @@ img.socialIcon {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  margin: 20px auto;
+  margin: 5px auto;
   padding: 24px 16px;
   text-align: center;
 }
@@ -177,6 +184,7 @@ img.socialIcon {
   }
   .title-home {
     font-size: 36px;
+    font-weight: 500;
   }
 }
 
