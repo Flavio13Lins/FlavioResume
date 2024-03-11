@@ -101,6 +101,15 @@ img.socialIcon {
   width: 30px;
 }
 
+.title-home {
+  color: #f0f8ff;
+  font-weight: 600;
+}
+
+.name-home {
+  color: #f0f8ff;
+}
+
 .skills-container {
   text-align: "left";
   columns: 2;
@@ -135,7 +144,7 @@ img.socialIcon {
   border-radius: 10px;
   flex-direction: column;
   justify-content: flex-start;
-  margin: 20px auto;
+  margin: 5px auto;
   padding: 24px 16px;
   display: flex;
 }
@@ -176,6 +185,7 @@ img.socialIcon {
 
   .title-home {
     font-size: 36px;
+    font-weight: 500;
   }
 }
 
