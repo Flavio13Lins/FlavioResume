@@ -46,7 +46,7 @@ const projectList = [
   {
     title: "Climate Change Analysis 🌦",
     description:
-    "This a data analysis project using Kaggle's database as source. Checking from 1750 to 2013 the average temperatures around the world, we can say that there is a sufficient sample of data for real concerns about global warming.",
+      "This a data analysis project using Kaggle's database as source. Checking from 1750 to 2013 the average temperatures around the world, we can say that there is a sufficient sample of data for real concerns about global warming.",
     url: "https://github.com/Flavio13Lins/Kaggle-ClimateChange",
   },
   {
@@ -58,13 +58,13 @@ const projectList = [
   {
     title: "Initial Value Problem 🧮",
     description:
-    "This is a problem solver prompt using Python. It was developed with the objective of implementing a list of numerical methods (eg Inverse Euler, Runge-Kutta, Adam-Multon) to solve a differential equation. The project has a documentation for better understanding.",
+      "This is a problem solver prompt using Python. It was developed with the objective of implementing a list of numerical methods (eg Inverse Euler, Runge-Kutta, Adam-Multon) to solve a differential equation. The project has a documentation for better understanding.",
     url: "https://github.com/Flavio13Lins/Numerical-Methods",
   },
   {
     title: "Busca Aí 🌎",
     description:
-    "Busca Aí is a simple application created in Vue.js with the essence of PWA, just as a practical test of development. The main objective was to create a website where people share their experiences anonymously when visiting places in the world.",
+      "Busca Aí is a simple application created in Vue.js with the essence of PWA, just as a practical test of development. The main objective was to create a website where people share their experiences anonymously when visiting places in the world.",
     url: "https://busca-ai-web-hosting.firebaseapp.com/",
   },
 ];

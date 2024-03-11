@@ -108,9 +108,9 @@ img.socialIcon {
 }
 
 .skills-container {
-  textAlign: "left";
+  text-align: "left";
   columns: 2;
-  fontSize: "1.25rem";
+  font-size: "1.25rem";
   margin: "2rem 3rem";
   gap: "3rem";
 }
@@ -158,9 +158,9 @@ img.socialIcon {
     width: calc(100% - 1rem); /* One project per row on smaller screens */
   }
   .skills-container {
-    textAlign: "left";
+    text-align: "left";
     columns: 1;
-    fontSize: "1.25rem";
+    font-size: "1.25rem";
     margin: "2rem 3rem";
     gap: "3rem";
   }
