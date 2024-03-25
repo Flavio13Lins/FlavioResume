@@ -83,12 +83,15 @@ const Portfolio = () => {
         </div>
         <div className="container">
           {projectList.map((project) => (
-            <div className="box" key={project.title}>
-              <a href={project.url} target="_blank" rel="noopener noreferrer">
-                <h3 style={{ flexBasis: "20px" }}>{project.title}</h3>
-              </a>
+            <button
+              onClick={() => window.open(project.url, "_blank", "noreferrer")}
+              className="box"
+              key={project.title}
+            >
+              <h3 style={{ flexBasis: "20px" }}>{project.title}</h3>
+
               <p className="small">{project.description}</p>
-            </div>
+            </button>
           ))}
         </div>
       </div>

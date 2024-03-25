@@ -151,6 +151,7 @@ img.socialIcon {
   margin: 5px auto;
   padding: 24px 16px;
   text-align: center;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 900px) {
