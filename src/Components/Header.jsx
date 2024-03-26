@@ -5,8 +5,11 @@
  * user scrolls so that they can constantly reach any part of your page.
  */
 import React from "react";
+import PropTypes from "prop-types";
 
-const Header = () => {
+const Header = (props) => {
+  const { quaternaryColor } = props;
+
   return (
     <div
       style={{
@@ -14,7 +17,8 @@ const Header = () => {
         display: "flex",
         justifyContent: "center",
         gap: "2rem",
-        background: "rgba(255,255,255,0.75)",
+        background: quaternaryColor,
+        opacity: 0.76,
         padding: "1rem",
         top: 0,
         width: "100%",
@@ -27,6 +31,14 @@ const Header = () => {
       <a href="#footer">Contact</a>
     </div>
   );
+};
+
+Header.propTypes = {
+  primaryColor: PropTypes.string,
+  secondaryColor: PropTypes.string,
+  tertiaryColor: PropTypes.string,
+  quaternaryColor: PropTypes.string,
+  quinaryColor: PropTypes.string,
 };
 
 export default Header;
