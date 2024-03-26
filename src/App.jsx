@@ -36,18 +36,33 @@ const siteProps = {
   youTube: "",
 };
 
-const primaryColor = "#3CB371";
-const secondaryColor = "#D2F1E4";
-
+const primaryColor = "#1c3112";
+const secondaryColor = "#0C4B41";
+const tertiaryColor = "#3CB371";
+const quaternaryColor = "#CBD5A9";
+const quinaryColor = "#29374D";
 
 const App = () => {
   return (
     <div id="main">
-      <Header />
+      <Header
+        primaryColor={primaryColor}
+        secondaryColor={secondaryColor}
+        tertiaryColor={tertiaryColor}
+        quaternaryColor={quaternaryColor}
+        quinaryColor={quinaryColor}
+      />
       <Home shortName={siteProps.shortName} title={siteProps.title} />
       <About />
       <Portfolio />
-      <Footer {...siteProps} primaryColor={primaryColor} secondaryColor={secondaryColor} />
+      <Footer
+        {...siteProps}
+        primaryColor={primaryColor}
+        secondaryColor={secondaryColor}
+        tertiaryColor={tertiaryColor}
+        quaternaryColor={quaternaryColor}
+        quinaryColor={quinaryColor}
+      />
     </div>
   );
 };
