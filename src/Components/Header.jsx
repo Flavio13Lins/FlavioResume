@@ -8,7 +8,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const Header = (props) => {
-  const { quaternaryColor } = props;
+  const { primaryColor } = props;
 
   return (
     <div
@@ -17,8 +17,8 @@ const Header = (props) => {
         display: "flex",
         justifyContent: "center",
         gap: "2rem",
-        background: quaternaryColor,
-        opacity: 0.76,
+        background: primaryColor,
+        opacity: 0.5,
         padding: "1rem",
         top: 0,
         width: "100%",
