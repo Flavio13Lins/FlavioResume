@@ -1,4 +1,12 @@
 @import "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Montserrat:wght@200;400;600;800&display=swap";
+:root {
+  --primary-color: #1c3112;
+  --secondary-color: #0c4b41;
+  --tertiary-color: #3cb371;
+  --quaternary-color: #cbd5a9;
+  --quinary-color: #29374d;
+}
+
 html, body {
   height: 100%;
   width: 100%;
@@ -48,6 +56,7 @@ h1 {
 }
 
 h2 {
+  color: var(--quinary-color);
   margin: 0;
   padding-top: 1rem;
   font-size: 2rem;
@@ -84,16 +93,21 @@ li {
 }
 
 li::marker {
-  color: #4e567e;
+  color: var(--secondary-color);
 }
 
 a {
-  color: #000;
+  color: #fff;
   text-decoration: none;
 }
 
 a:hover {
-  color: #4e567e;
+  color: var(--tertiary-color);
+  text-decoration: none;
+}
+
+a:active {
+  color: var(--quaternary-color);
 }
 
 img.socialIcon {
@@ -139,14 +153,20 @@ img.socialIcon {
 
 .box {
   width: calc(50% - 40px);
-  text-align: center;
-  border: 1px solid #ccc;
-  border-radius: 10px;
+  border: 1px solid var(--secondary-color);
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 3px;
   flex-direction: column;
   justify-content: flex-start;
   margin: 5px auto;
   padding: 24px 16px;
   display: flex;
+}
+
+.box:hover {
+  border: 1px solid var(--tertiary-color);
+  background-color: var(--quaternary-color);
 }
 
 @media screen and (max-width: 900px) {
