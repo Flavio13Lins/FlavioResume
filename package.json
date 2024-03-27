@@ -1,7 +1,7 @@
 {
   "name": "flavio13lins-resume",
-  "version": "5.0.0",
-  "description": "Resume Flavio13Lins",
+  "version": "6.0.0",
+  "description": "Project to show Flavio's Resume",
   "source": "src/index.html",
   "homepage": "https://flavio13lins.github.io/FlavioResume/",
   "scripts": {
