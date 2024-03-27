@@ -20,7 +20,7 @@ import React from "react";
  * freely use on your site.
  */
 
-import image from "../images/projects-collage.png";
+import image from "../images/projectscollage.png";
 
 const imageAltText = "Images of my developed projects.";
 
