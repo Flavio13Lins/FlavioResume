@@ -116,8 +116,11 @@ const Footer = (props) => {
       </div>
       <p className="small" style={{ marginTop: 0, textAlign: "center", color: "white" }}>
         <div>
-          Email me at <a href="mailto:flavio13lins@gmail.com">flavio13lins@gmail.com</a>
-          <img src={copyIcon} alt="copyIcon" className="copyIcon"/>
+          Email me at{" "}
+          <a className="email" href="mailto:flavio13lins@gmail.com">
+            flavio13lins@gmail.com
+          </a>
+          <img src={copyIcon} alt="copyIcon" className="copyIcon" />
         </div>
         <div>
           {new Date().getFullYear()} — <strong>{nickName}</strong>
