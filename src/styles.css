@@ -131,15 +131,12 @@ img.socialIcon {
   width: 24px;
 }
 
-img.socialIcon:hover {
-  background-color: var(--quinary-color);
-}
-
 img.copyIcon {
   padding: 3px 5px;
   height: 19px;
   width: 15px;
 }
+
 img.copyIcon:hover {
   border-radius: 50%;
   background-color: 	hsla(170, 72%, 17%, 0.5);
