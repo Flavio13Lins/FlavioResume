@@ -11,7 +11,6 @@ import React from "react";
 import PropTypes from "prop-types";
 
 import devDotToIcon from "../images/socials/devdotto.svg";
-import envelopeIcon from "../images/socials/envelope.svg";
 import gitHubIcon from "../images/socials/github.svg";
 import instagramIcon from "../images/socials/instagram.svg";
 import linkedInIcon from "../images/socials/linkedin.svg";
@@ -61,11 +60,6 @@ const Footer = (props) => {
           gap: "3rem",
         }}
       >
-        {email && (
-          <a href={`mailto:${email}`}>
-            <img src={envelopeIcon} alt="email" className="socialIcon" />
-          </a>
-        )}
         {linkedIn && (
           <a
             href={`https://www.linkedin.com/in/${linkedIn}`}
@@ -115,13 +109,15 @@ const Footer = (props) => {
         )}
       </div>
       <p className="small" style={{ marginTop: 0, textAlign: "center", color: "white" }}>
-        <div>
-          Email me at{" "}
-          <a className="email" href="mailto:flavio13lins@gmail.com">
-            flavio13lins@gmail.com
-          </a>
-          <img src={copyIcon} alt="copyIcon" className="copyIcon" />
-        </div>
+        {email && (
+          <div>
+            Email me at{" "}
+            <a className="email" href={`mailto:${email}`}>
+              {email}
+            </a>
+            <img src={copyIcon} alt="copyIcon" className="copyIcon" />
+          </div>
+        )}
         <div>
           {new Date().getFullYear()} — <strong>{nickName}</strong>
         </div>
