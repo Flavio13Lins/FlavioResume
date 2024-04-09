@@ -101,9 +101,15 @@ li::marker {
   color: var(--secondary-color);
 }
 
-a {
+a.header-link {
   color: white;
   text-decoration: none;
+  transition: 0.4s;
+}
+a {
+  color: var(--tertiary-color);
+  text-decoration: none;
+  transition: 0.4s;
 }
 /* mouse over link */
 a:hover {
