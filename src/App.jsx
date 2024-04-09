@@ -24,6 +24,7 @@ import "./styles.css";
  * If you don't have one of the social sites listed, leave it as an empty string.
  */
 const siteProps = {
+  nickName: "Flavio13Lins",
   shortName: "Flávio Nascimento",
   fullName: "Flávio Lins da Mota Nascimento",
   title: "Computer Engineer & Software Developer",

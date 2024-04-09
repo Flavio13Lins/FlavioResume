@@ -123,8 +123,13 @@ a:active {
 }
 
 img.socialIcon {
-  height: 30px;
-  width: 30px;
+  height: 24px;
+  width: 24px;
+}
+
+img.copyIcon {
+  height: 15px;
+  width: 15px;
 }
 
 .title-home {

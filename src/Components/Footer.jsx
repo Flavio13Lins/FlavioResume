@@ -18,6 +18,7 @@ import linkedInIcon from "../images/socials/linkedin.svg";
 import mediumIcon from "../images/socials/medium.svg";
 import twitterIcon from "../images/socials/twitter.svg";
 import youTubeIcon from "../images/socials/youtube.svg";
+import copyIcon from "../images/socials/copy.svg";
 
 /**
  * 💡 Learning resources
@@ -34,7 +35,7 @@ const Footer = (props) => {
     instagram,
     linkedIn,
     medium,
-    fullName,
+    nickName,
     primaryColor,
     twitter,
     youTube,
@@ -47,8 +48,8 @@ const Footer = (props) => {
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
-        gap: "2.5rem",
-        padding: "5rem 0 3rem",
+        gap: "1rem",
+        padding: "2rem 0 1rem 0",
         backgroundColor: primaryColor,
         width: "100vw",
       }}
@@ -57,7 +58,7 @@ const Footer = (props) => {
         style={{
           display: "flex",
           justifyContent: "center",
-          gap: "2.5rem",
+          gap: "3rem",
         }}
       >
         {email && (
@@ -113,15 +114,21 @@ const Footer = (props) => {
           </a>
         )}
       </div>
-      <p className="small" style={{ marginTop: 0, color: "white" }}>
-        Created by {fullName}
+      <p className="small" style={{ marginTop: 0, textAlign: "center", color: "white" }}>
+        <div>
+          Email me at <a href="mailto:flavio13lins@gmail.com">flavio13lins@gmail.com</a>
+          <img src={copyIcon} alt="copyIcon" className="copyIcon"/>
+        </div>
+        <div>
+          {new Date().getFullYear()} — <strong>{nickName}</strong>
+        </div>
       </p>
     </div>
   );
 };
 
 Footer.defaultProps = {
-  fullName: "",
+  nickName: "",
 };
 
 Footer.propTypes = {
@@ -131,6 +138,7 @@ Footer.propTypes = {
   instagram: PropTypes.string,
   linkedIn: PropTypes.string,
   medium: PropTypes.string,
+  nickName: PropTypes.string.isRequired,
   fullName: PropTypes.string.isRequired,
   primaryColor: PropTypes.string,
   secondaryColor: PropTypes.string,
