@@ -17,7 +17,7 @@ import linkedInIcon from "../images/socials/linkedin.svg";
 import mediumIcon from "../images/socials/medium.svg";
 import twitterIcon from "../images/socials/twitter.svg";
 import youTubeIcon from "../images/socials/youtube.svg";
-import copyIcon from "../images/socials/copy.svg";
+// import copyIcon from "../images/socials/copy.svg";
 
 /**
  * 💡 Learning resources
@@ -115,7 +115,7 @@ const Footer = (props) => {
             <a className="email" href={`mailto:${email}`}>
               {email}
             </a>
-            <img src={copyIcon} alt="copyIcon" className="copyIcon" />
+            {/* <img src={copyIcon} alt="copyIcon" className="copyIcon" /> */}
           </div>
         )}
         <div>
