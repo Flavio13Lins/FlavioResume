@@ -29,6 +29,7 @@ const siteProps = {
   fullName: "Flávio Lins da Mota Nascimento",
   title: "Computer Engineer & Software Developer",
   email: "flavio13lins@gmail.com",
+  discordId: "654752684884361265",
   gitHub: "Flavio13Lins",
   instagram: "Flavio13Lins",
   linkedIn: "flavio13lins",

@@ -11,6 +11,7 @@ import React, { useState } from "react";
 import PropTypes from "prop-types";
 
 import devDotToIcon from "../images/socials/devdotto.svg";
+import discordInIcon from "../images/socials/discord.svg";
 import gitHubIcon from "../images/socials/github.svg";
 import instagramIcon from "../images/socials/instagram.svg";
 import linkedInIcon from "../images/socials/linkedin.svg";
@@ -31,6 +32,7 @@ const Footer = (props) => {
 
   const {
     devDotTo,
+    discordId,
     email,
     gitHub,
     instagram,
@@ -109,6 +111,15 @@ const Footer = (props) => {
             <img src={youTubeIcon} alt="YouTube" className="socialIcon" />
           </a>
         )}
+        {discordId && (
+          <a
+            href={`https://discordid.netlify.app/?id=${discordId}`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={discordInIcon} alt="Discord" className="socialIcon" />
+          </a>
+        )}
       </div>
       <p className="small" style={{ marginTop: 0, textAlign: "center", color: "white" }}>
         {email && (
@@ -148,6 +159,7 @@ Footer.defaultProps = {
 
 Footer.propTypes = {
   devDotTo: PropTypes.string,
+  discordId: PropTypes.string,
   email: PropTypes.string,
   gitHub: PropTypes.string,
   instagram: PropTypes.string,
