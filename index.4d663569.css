@@ -88,6 +88,17 @@ hr {
   margin: 2.5rem;
 }
 
+.unbuttonize {
+  text-align: inherit;
+  font: inherit;
+  appearance: none;
+  background-color: #0000;
+  border: none;
+  border-radius: 0;
+  margin: 0;
+  padding: 0;
+}
+
 li {
   line-height: 1.7;
 }
@@ -96,8 +107,24 @@ li::marker {
   color: var(--secondary-color);
 }
 
-a {
+a.header-link {
   color: #fff;
+  text-decoration: none;
+  transition: all .4s;
+}
+
+a {
+  color: var(--tertiary-color);
+  text-decoration: none;
+  transition: all .4s;
+}
+
+a.email {
+  margin-left: 4px;
+}
+
+a.email:hover {
+  background-color: #00bd7e33;
   text-decoration: none;
 }
 
@@ -111,8 +138,43 @@ a:active {
 }
 
 img.socialIcon {
-  height: 30px;
-  width: 30px;
+  height: 24px;
+  width: 24px;
+}
+
+img.copyIcon {
+  height: 19px;
+  width: 15px;
+  padding: 3px 5px;
+}
+
+img.copyIcon:hover {
+  background-color: #0c4b4080;
+  border-radius: 50%;
+}
+
+.tooltip {
+  display: inline-block;
+  position: relative;
+}
+
+.copyTooltip {
+  visibility: hidden;
+  width: 100px;
+  color: #fff;
+  text-align: center;
+  z-index: 1;
+  background-color: #00000080;
+  border-radius: 6px;
+  margin-left: -50px;
+  padding: 5px 0;
+  position: absolute;
+  bottom: 125%;
+  left: 50%;
+}
+
+.tooltip:hover .copyTooltip {
+  visibility: visible;
 }
 
 .title-home {
