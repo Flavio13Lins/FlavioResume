@@ -7,7 +7,7 @@
  *
  * If a social value has an empty string it will not be displayed.
  */
-import React from "react";
+import React, { useState } from "react";
 import PropTypes from "prop-types";
 
 import devDotToIcon from "../images/socials/devdotto.svg";
@@ -27,6 +27,8 @@ import copyIcon from "../images/socials/copy.svg";
  */
 
 const Footer = (props) => {
+  const [copyText, setCopyText] = useState("Copy email");
+
   const {
     devDotTo,
     email,
@@ -115,7 +117,21 @@ const Footer = (props) => {
             <a className="email" href={`mailto:${email}`}>
               {email}
             </a>
-            <img src={copyIcon} alt="copyIcon" className="copyIcon" />
+            <div className="tooltip">
+              <button
+                className="unbuttonize"
+                onClick={() => {
+                  setCopyText("Copied!");
+                  navigator.clipboard.writeText(email);
+                }}
+                onMouseLeave={() => {
+                  setCopyText("Copy email");
+                }}
+              >
+                <img src={copyIcon} alt="copyIcon" className="copyIcon" />
+              </button>
+              <span className="copyTooltip">{copyText}</span>
+            </div>
           </div>
         )}
         <div>

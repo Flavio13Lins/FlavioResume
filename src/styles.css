@@ -93,6 +93,17 @@ hr {
   margin: 2.5rem;
 }
 
+.unbuttonize {
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  padding: 0;
+  text-align: inherit;
+  font: inherit;
+  border-radius: 0;
+  appearance: none;
+}
+
 li {
   line-height: 1.7;
 }
@@ -143,6 +154,31 @@ img.copyIcon {
 img.copyIcon:hover {
   border-radius: 50%;
   background-color: 	hsla(170, 72%, 17%, 0.5);
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.copyTooltip {
+  visibility: hidden;
+  width: 100px;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -50px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+ 
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .copyTooltip {
+  visibility: visible;
 }
 
 .title-home {
