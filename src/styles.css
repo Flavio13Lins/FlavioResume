@@ -140,6 +140,11 @@ a:active {
   color: var(--quaternary-color);
 }
 
+img.iconCert {
+  height: 48px;
+  width: 48px;
+}
+
 img.socialIcon {
   height: 24px;
   width: 24px;
