@@ -25,10 +25,18 @@ const Header = (props) => {
         zIndex: 10,
       }}
     >
-      <a className="header-link" href="#home">Home</a>
-      <a className="header-link" href="#about">About</a>
-      <a className="header-link" href="#portfolio">Portfolio</a>
-      <a className="header-link" href="#footer">Contact</a>
+      <a className="header-link" href="#home">
+        Home
+      </a>
+      <a className="header-link" href="#about">
+        About
+      </a>
+      <a className="header-link" href="#portfolio">
+        Portfolio
+      </a>
+      <a className="header-link" href="#footer">
+        Contact
+      </a>
     </div>
   );
 };
