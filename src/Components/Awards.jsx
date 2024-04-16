@@ -86,27 +86,27 @@ const Awards = () => {
       >
         <h2>{title}</h2>
         <div>{openDialog}</div>
-        <ul>
-          {awardList.map((skill, index) => (
-            <button
-              className="unbuttonize"
-              key={skill}
-              onClick={() => {
-                setOpenDialog(index);
-              }}
-            >
-              <div>
+        {awardList.map((skill, index) => (
+          <button
+            className="unbuttonize"
+            key={skill}
+            onClick={() => {
+              setOpenDialog(index);
+            }}
+          >
+            <div className="awardCard">
+              <div className="awardIconDate">
                 <div>{index}</div>
                 <img className="iconCert" src={iconCertification} alt="CertificationIcon" />
                 <h5>{skill.date}</h5>
               </div>
               <div>
                 <h4>{skill.title}</h4>
-                <p>{skill.summary}</p>
+                {openDialog === index && <p>{skill.summary}</p>}
               </div>
-            </button>
-          ))}
-        </ul>
+            </div>
+          </button>
+        ))}
       </div>
     </section>
   );
