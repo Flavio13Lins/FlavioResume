@@ -240,6 +240,21 @@ img.copyIcon:hover {
   background-color: var(--quaternary-color);
 }
 
+.awardCard {
+  display: flex;
+  flex-direction: row;
+  padding: 6px;
+  margin: 10px 0;
+  max-width: 90%;
+  border-radius: 4px;
+}
+
+.awardIconDate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 @media screen and (max-width: 900px) {
   .portfolio-container {
     flex-direction: column;
