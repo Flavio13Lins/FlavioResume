@@ -7,6 +7,8 @@
 import React, { useState } from "react";
 
 import iconCertification from "../images/certificate.svg";
+import iconChevronUp from "../images/chevron-up.svg";
+import iconChevronDown from "../images/chevron-down.svg";
 import iconOpenNew from "../images/open-in-new.svg";
 
 const awardList = [
@@ -94,14 +96,39 @@ const Awards = () => {
               setOpenDialog(index);
             }}
           >
-            <div className="awardCard">
-              <div className="awardIconDate">
-                <img className="iconCert" src={iconCertification} alt="CertificationIcon" />
-                <h5>{skill.date}</h5>
+            {openDialog !== index && (
+              <div className="awardCard">
+                <div className="awardIconDate">
+                  <img className="iconCert" src={iconCertification} alt="CertificationIcon" />
+                  <h5>{skill.date}</h5>
+                  <img className="iconChevron" src={iconChevronDown} alt="ChevronDown" />
+                </div>
+                <div>
+                  <h4>{skill.title}</h4>
+                </div>
               </div>
-              <div>
-                <h4>{skill.title}</h4>
-                {openDialog === index && (
+            )}
+            {openDialog === index && (
+              <div className="awardCard">
+                <div className="awardIconDate">
+                  <img className="iconCert" src={iconCertification} alt="CertificationIcon" />
+                  <h5>{skill.date}</h5>
+                  {openDialog === index && (
+                    <button
+                      className="unbuttonize"
+                      onClick={() => {
+                        setOpenDialog(-1);
+                      }}
+                    >
+                      <img className="iconChevron" src={iconChevronUp} alt="ChevronUp" />
+                    </button>
+                  )}
+                  {openDialog !== index && (
+                    <img className="iconChevron" src={iconChevronDown} alt="ChevronDown" />
+                  )}
+                </div>
+                <div>
+                  <h4>{skill.title}</h4>
                   <div>
                     <p>{skill.summary}</p>
                     <button
@@ -114,9 +141,9 @@ const Awards = () => {
                       </div>
                     </button>
                   </div>
-                )}
+                </div>
               </div>
-            </div>
+            )}
           </button>
         ))}
       </div>
