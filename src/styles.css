@@ -156,6 +156,11 @@ img.copyIcon {
   width: 15px;
 }
 
+img.iconChevron {
+  height: 24px;
+  width: 24px;
+}
+
 img.iconOpenNewTab {
   height: 16px;
   width: 16px;
