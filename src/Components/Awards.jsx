@@ -7,6 +7,7 @@
 import React, { useState } from "react";
 
 import iconCertification from "../images/certificate.svg";
+import iconOpenNew from "../images/open-in-new.svg";
 
 const awardList = [
   {
@@ -85,7 +86,6 @@ const Awards = () => {
         }}
       >
         <h2>{title}</h2>
-        <div>{openDialog}</div>
         {awardList.map((skill, index) => (
           <button
             className="unbuttonize"
@@ -96,13 +96,25 @@ const Awards = () => {
           >
             <div className="awardCard">
               <div className="awardIconDate">
-                <div>{index}</div>
                 <img className="iconCert" src={iconCertification} alt="CertificationIcon" />
                 <h5>{skill.date}</h5>
               </div>
               <div>
                 <h4>{skill.title}</h4>
-                {openDialog === index && <p>{skill.summary}</p>}
+                {openDialog === index && (
+                  <div>
+                    <p>{skill.summary}</p>
+                    <button
+                      className="unbuttonize"
+                      onClick={() => window.open(skill.link, "_blank")}
+                    >
+                      <div className="btnIconTitle">
+                        <img className="iconOpenNewTab" src={iconOpenNew} alt="OpenNewTab" />
+                        View Certificate
+                      </div>
+                    </button>
+                  </div>
+                )}
               </div>
             </div>
           </button>
