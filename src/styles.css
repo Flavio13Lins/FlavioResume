@@ -241,7 +241,6 @@ img.copyIcon:hover {
   justify-content: flex-start;
   margin: 5px auto;
   padding: 24px 16px;
-  /* text-align: justify; */
   cursor: pointer;
 }
 
@@ -250,20 +249,12 @@ img.copyIcon:hover {
   background-color: var(--quaternary-color);
 }
 
-.awardList {
-
-  display: grid;
-  grid-template-columns: repeat(2, auto);
-  
-}
-
 .awardCard {
   display: flex;
   flex-direction: row;
   background-color: var(--quaternary-color);
-  min-width: 200px;
   padding: 6px;
-  margin: 10px 0;
+  margin: 10px 5px;
   border-radius: 4px;
 }
 
@@ -271,7 +262,7 @@ img.copyIcon:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: start;
 }
 
 .btnIconTitle {
@@ -300,10 +291,20 @@ img.copyIcon:hover {
   width: auto;
 }
 
+.awardList {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+}
+
 @media screen and (max-width: 900px) {
   .portfolio-container {
     flex-direction: column;
     align-items: center;
+  }
+
+  .awardList {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
   }
 }
 
