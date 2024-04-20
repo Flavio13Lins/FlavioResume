@@ -88,67 +88,75 @@ const Awards = () => {
         }}
       >
         <h2>{title}</h2>
-        {awardList.map((skill, index) => (
-          <button
-            className="unbuttonize"
-            key={skill}
-            onClick={() => {
-              setOpenDialog(index);
-            }}
-          >
-            {openDialog !== index && (
-              <div className="awardCard">
-                <div className="awardIconDate">
-                  <img className="iconCert" src={iconCertification} alt="CertificationIcon" />
-                  <h5>{skill.date}</h5>
-                  <img className="iconChevron" src={iconChevronDown} alt="ChevronDown" />
-                </div>
-                <div>
-                  <h4>{skill.title}</h4>
-                </div>
-              </div>
-            )}
-            {openDialog === index && (
-              <div className="awardCard">
-                <div className="awardIconDate">
-                  <img className="iconCert" src={iconCertification} alt="CertificationIcon" />
-                  <h5>{skill.date}</h5>
-                  {openDialog === index && (
+        <div className="awardList">
+          {awardList.map((skill, index) => {
+            return openDialog !== index ? (
+              <button
+                key={skill}
+                className="unbuttonize awardCard"
+                onClick={() => {
+                  setOpenDialog(index);
+                }}
+              >
+                {openDialog !== index && (
+                  <>
+                    <div className="awardIconDate">
+                      <img className="iconCert" src={iconCertification} alt="CertificationIcon" />
+                      <h5>{skill.date}</h5>
+                    </div>
+                    <div>
+                      <h4>{skill.title}</h4>
+                    </div>
+                    <div>
+                      <img className="iconChevron" src={iconChevronDown} alt="ChevronDown" />
+                    </div>
+                  </>
+                )}
+              </button>
+            ) : (
+              <div key={skill}>
+                {openDialog === index && (
+                  <div className="awardCard">
                     <button
-                      className="unbuttonize"
+                      className="unbuttonize awardIconDate"
                       onClick={() => {
                         setOpenDialog(-1);
                       }}
                     >
-                      <img className="iconChevron" src={iconChevronUp} alt="ChevronUp" />
+                      <img className="iconCert" src={iconCertification} alt="CertificationIcon" />
+                      <h5>{skill.date}</h5>
+                      {openDialog !== index && (
+                        <img className="iconChevron" src={iconChevronDown} alt="ChevronDown" />
+                      )}
                     </button>
-                  )}
-                  {openDialog !== index && (
-                    <img className="iconChevron" src={iconChevronDown} alt="ChevronDown" />
-                  )}
-                </div>
-                <div>
-                  <h4>{skill.title}</h4>
-                  <div>
-                    <p>{skill.summary}</p>
-                    <button
-                      className="unbuttonize"
-                      onClick={() => window.open(skill.link, "_blank")}
-                    >
-                      <div className="btnIconTitle">
-                        <img className="iconOpenNewTab" src={iconOpenNew} alt="OpenNewTab" />
-                        View Certificate
+                    <div className="awardContent">
+                      <h4>{skill.title}</h4>
+                      <div>
+                        <p>{skill.summary}</p>
+                        <button
+                          className="unbuttonize"
+                          onClick={() => window.open(skill.link, "_blank")}
+                        >
+                          <div className="btnIconTitle">
+                            <img className="iconOpenNewTab" src={iconOpenNew} alt="OpenNewTab" />
+                            View Certificate
+                          </div>
+                        </button>
                       </div>
-                    </button>
+                    </div>
+                    <div>
+                      <img className="iconChevron" src={iconChevronUp} alt="ChevronUp" />
+                    </div>
                   </div>
-                </div>
+                )}
               </div>
-            )}
-          </button>
-        ))}
+            );
+          })}
+        </div>
       </div>
     </section>
   );
 };
 
 export default Awards;
+
