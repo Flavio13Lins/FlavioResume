@@ -130,7 +130,14 @@ const Awards = () => {
                       )}
                     </button>
                     <div className="awardContent">
-                      <h4>{skill.title}</h4>
+                      <button
+                        className="unbuttonize"
+                        onClick={() => {
+                          setOpenDialog(-1);
+                        }}
+                      >
+                        <h4>{skill.title}</h4>
+                      </button>
                       <div>
                         <p>{skill.summary}</p>
                         <button
@@ -144,9 +151,14 @@ const Awards = () => {
                         </button>
                       </div>
                     </div>
-                    <div>
+                    <button
+                      className="unbuttonize chevronUpOnSide"
+                      onClick={() => {
+                        setOpenDialog(-1);
+                      }}
+                    >
                       <img className="iconChevron" src={iconChevronUp} alt="ChevronUp" />
-                    </div>
+                    </button>
                   </div>
                 )}
               </div>
@@ -159,4 +171,3 @@ const Awards = () => {
 };
 
 export default Awards;
-

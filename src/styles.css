@@ -291,6 +291,11 @@ img.copyIcon:hover {
   background-color: var(--quaternary-color);
 }
 
+.chevronUpOnSide {
+  display: flex;
+  align-content: start;
+}
+
 .awardContent {
   width: auto;
 }
