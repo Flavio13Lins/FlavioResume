@@ -141,8 +141,8 @@ a:active {
 }
 
 img.iconCert {
-  height: 48px;
-  width: 48px;
+  height: 40px;
+  width: 40px;
 }
 
 img.socialIcon {
@@ -250,13 +250,20 @@ img.copyIcon:hover {
   background-color: var(--quaternary-color);
 }
 
+.awardList {
+
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  
+}
+
 .awardCard {
-  background-color: var(--quaternary-color);
   display: flex;
   flex-direction: row;
+  background-color: var(--quaternary-color);
+  min-width: 200px;
   padding: 6px;
   margin: 10px 0;
-  min-width: 90%;
   border-radius: 4px;
 }
 
@@ -264,6 +271,7 @@ img.copyIcon:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
 }
 
 .btnIconTitle {
@@ -281,6 +289,10 @@ img.copyIcon:hover {
   cursor: pointer;
   border: 1px solid var(--tertiary-color);
   background-color: var(--quaternary-color);
+}
+
+.awardContent {
+  width: auto;
 }
 
 @media screen and (max-width: 900px) {
