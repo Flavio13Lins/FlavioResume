@@ -81,7 +81,7 @@ const Awards = () => {
       <div
         style={{
           backgroundColor: "white",
-          width: "50%",
+          width: "70%",
           padding: "4rem",
           margin: "3rem auto",
           textAlign: "center",
@@ -93,7 +93,7 @@ const Awards = () => {
             return openDialog !== index ? (
               <button
                 key={skill}
-                className="unbuttonize awardCard"
+                className="unbuttonize awardCardClosed"
                 onClick={() => {
                   setOpenDialog(index);
                 }}
@@ -104,8 +104,8 @@ const Awards = () => {
                       <img className="iconCert" src={iconCertification} alt="CertificationIcon" />
                       <h5>{skill.date}</h5>
                     </div>
-                    <div>
-                      <h4>{skill.title}</h4>
+                    <div style={{ alignSelf: "center" }}>
+                      <h4 className="awardTitle">{skill.title}</h4>
                     </div>
                     <div>
                       <img className="iconChevron" src={iconChevronDown} alt="ChevronDown" />
@@ -116,7 +116,7 @@ const Awards = () => {
             ) : (
               <div key={skill}>
                 {openDialog === index && (
-                  <div className="awardCard">
+                  <div className="awardCardOpened">
                     <button
                       className="unbuttonize awardIconDate"
                       onClick={() => {
@@ -136,7 +136,7 @@ const Awards = () => {
                           setOpenDialog(-1);
                         }}
                       >
-                        <h4>{skill.title}</h4>
+                        <h4 className="awardTitle">{skill.title}</h4>
                       </button>
                       <div>
                         <p>{skill.summary}</p>
