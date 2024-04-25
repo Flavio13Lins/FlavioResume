@@ -11,6 +11,10 @@ import iconChevronUp from "../images/chevron-up.svg";
 import iconChevronDown from "../images/chevron-down.svg";
 import iconOpenNew from "../images/open-in-new.svg";
 
+import image from "../images/background.png";
+
+const imageAltText = "Green, blue and yello abstract background";
+
 const awardList = [
   {
     title: "Perform Foundational Data, ML, and AI Tasks in Google Cloud - Google",
@@ -78,15 +82,8 @@ const Awards = () => {
 
   return (
     <section className="padding" id="awards">
-      <div
-        style={{
-          backgroundColor: "white",
-          width: "70%",
-          padding: "4rem",
-          margin: "3rem auto",
-          textAlign: "center",
-        }}
-      >
+      <img className="background" src={image} alt={imageAltText} />
+      <div className="myAwardsContent">
         <h2>{title}</h2>
         <div className="awardList">
           {awardList.map((skill, index) => {
