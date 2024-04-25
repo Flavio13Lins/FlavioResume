@@ -7,7 +7,7 @@
 import React from "react";
 
 import About from "./Components/About";
-// import Awards from "./Components/Awards";
+import Awards from "./Components/Awards";
 import Footer from "./Components/Footer";
 import Header from "./Components/Header";
 import Home from "./Components/Home";
@@ -48,7 +48,6 @@ const quinaryColor = "#29374D";
 const App = () => {
   return (
     <div id="main">
-      {/* <Awards /> */}
       <Header
         primaryColor={primaryColor}
         secondaryColor={secondaryColor}
@@ -59,6 +58,7 @@ const App = () => {
       <Home shortName={siteProps.shortName} title={siteProps.title} />
       <About />
       <Portfolio />
+      <Awards />
       <Footer
         {...siteProps}
         primaryColor={primaryColor}
