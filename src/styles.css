@@ -255,14 +255,28 @@ img.copyIcon:hover {
 .awardCardClosed {
   display: flex;
   flex-direction: row;
-  background-color: var(--primary-color);
-  color: var(--quaternary-color);
+  background-color: white;
+  /* color: var(--quaternary-color); */
   padding: 10px;
   margin: 5px 20px;
-  border: #CBD5A9 1px solid;
+  border: var(--secondary-color) 1px solid;
   border-radius: 4px;
   justify-content: space-between;
   max-height: 166px;
+}
+
+.awardCardOpened {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  /* color: white; */
+  padding: 10px;
+  margin: 5px 20px;
+  border-radius: 4px;
+  border: var(--secondary-color) 1px solid;
+  justify-content: space-between;
+  overflow: hidden;
+  animation: showcontent 4s ease-out;
 }
 
 @keyframes showcontent {
@@ -286,23 +300,9 @@ img.copyIcon:hover {
   }
 }
 
-.awardCardOpened {
-  display: flex;
-  flex-direction: row;
-  background-color: var(--primary-color);
-  color: white;
-  padding: 10px;
-  margin: 5px 20px;
-  border-radius: 4px;
-  border: #CBD5A9 1px solid;
-  justify-content: space-between;
-  overflow: hidden;
-  animation: showcontent 4s ease-out;
-}
-
 .awardIconDate {
   display: flex;
-  color: white;
+  /* color: white; */
   flex-direction: column;
   align-items: center;
   justify-content: start;
@@ -341,7 +341,7 @@ img.copyIcon:hover {
 .awardTitle {
   padding: 0 10px;
   margin: 0;
-  color: white;
+  /* color: white; */
 }
 
 .awardContent {
