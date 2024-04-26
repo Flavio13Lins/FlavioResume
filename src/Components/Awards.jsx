@@ -11,7 +11,7 @@ import iconChevronUp from "../images/chevron-up.svg";
 import iconChevronDown from "../images/chevron-down.svg";
 import iconOpenNew from "../images/open-in-new.svg";
 
-import image from "../images/background.png";
+import image from "../images/background1.svg";
 
 const imageAltText = "Green, blue and yello abstract background";
 
