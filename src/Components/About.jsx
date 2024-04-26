@@ -30,13 +30,7 @@ const About = () => {
     <section className="padding" id="about">
       <img className="background" src={image} alt={imageAltText} />
       <div
-        style={{
-          backgroundColor: "white",
-          width: "50%",
-          padding: "4rem",
-          margin: "3rem auto",
-          textAlign: "center",
-        }}
+        className="aboutContainer"
       >
         <h2>About Myself</h2>
         <p className="large">{description}</p>
