@@ -34,6 +34,9 @@ const Header = (props) => {
       <a className="header-link" href="#portfolio">
         Portfolio
       </a>
+      <a className="header-link" href="#awards">
+        My Awards
+      </a>
       <a className="header-link" href="#footer">
         Contact
       </a>
