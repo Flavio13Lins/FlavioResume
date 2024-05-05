@@ -6,10 +6,10 @@
 
 import React from "react";
 
-import image from "../images/background2.svg";
+// import image from "../images/background2.svg";
 import Background2 from "../images/Background2";
 
-const imageAltText = "Green, blue and yello abstract background";
+// const imageAltText = "Green, blue and yello abstract background";
 
 const description =
   "I am a graduated B.Sc. in Computer Engineering, I have been working with software development for over 5 years. I am a IBM Certified: Artificial Intelligence Practitioner.";
@@ -28,8 +28,9 @@ const detailOrQuote =
 
 const About = () => {
   return (
-    <section className="padding" id="about">
+    <section id="about">
       <Background2
+        className="background"
         bg="var(--background-color)"
         primary="var(--primary-color)"
         secondary="var(--secondary-color)"
@@ -37,7 +38,7 @@ const About = () => {
         quaternary="var(--quaternary-color)"
         quinary="var(--quinary-color)"
       />
-      <img className="background" src={image} alt={imageAltText} />
+      {/* <img className="background" src={image} alt={imageAltText} /> */}
       <div className="aboutContainer">
         <h2>About Myself</h2>
         <p className="large">{description}</p>
