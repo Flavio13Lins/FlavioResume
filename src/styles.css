@@ -10,14 +10,26 @@
   --tertiary-color:#3CB371;
   --quaternary-color:#CBD5A9;
   --quinary-color:#29374D;
-
-  /* background-color */
+  --background-color: white;
+  --text-color: black;
 }
 @media (prefers-color-scheme: dark) {
   :root {
-    --primary-color:#1c3112;
-    /* background-color [...] */
+    /* --primary-color:#301231;
+    --secondary-color:#0c334b;
+    --tertiary-color:#abb33c;
+    --quaternary-color:#a9d5aa;
+    --quinary-color:#4d2933; */
+    --background-color: #1c1c1c;
+    --text-color: white
   }
+}
+
+.background>g{
+  fill: #ffff00;
+}
+.svg-bg{
+  fill: #ffff00;
 }
 
 html,
@@ -183,7 +195,7 @@ img.copyIcon:hover {
 }
 
 .aboutContainer {
-  background-color: white;
+  background-color: var(--background-color);
   width: 50%;
   padding: 4rem;
   margin: 3rem auto;
@@ -254,7 +266,7 @@ img.copyIcon:hover {
   width: calc(50% - 40px);
   border-radius: 3px;
   border: 1px solid var(--secondary-color);
-  background-color: white;
+  background-color: var(--background-color);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -271,7 +283,7 @@ img.copyIcon:hover {
 .awardCardClosed {
   display: flex;
   flex-direction: row;
-  background-color: white;
+  background-color: var(--background-color);
   /* color: var(--quaternary-color); */
   padding: 10px;
   margin: 5px 20px;
@@ -284,7 +296,7 @@ img.copyIcon:hover {
 .awardCardOpened {
   display: flex;
   flex-direction: row;
-  background-color: white;
+  background-color: var(--background-color);
   /* color: white; */
   padding: 10px;
   margin: 5px 20px;
@@ -328,7 +340,7 @@ img.copyIcon:hover {
   padding: 2px 6px;
   border-radius: 4px;
   border: 1px solid var(--secondary-color);
-  background-color: white;
+  background-color: var(--background-color);
 
   display: flex;
   flex-direction: row;
