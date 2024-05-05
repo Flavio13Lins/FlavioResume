@@ -7,6 +7,7 @@
 import React from "react";
 
 import image from "../images/background2.svg";
+import Background2 from "../images/Background2";
 
 const imageAltText = "Green, blue and yello abstract background";
 
@@ -28,10 +29,16 @@ const detailOrQuote =
 const About = () => {
   return (
     <section className="padding" id="about">
+      <Background2
+        bg="var(--background-color)"
+        primary="var(--primary-color)"
+        secondary="var(--secondary-color)"
+        tertiary="var(--tertiary-color)"
+        quaternary="var(--quaternary-color)"
+        quinary="var(--quinary-color)"
+      />
       <img className="background" src={image} alt={imageAltText} />
-      <div
-        className="aboutContainer"
-      >
+      <div className="aboutContainer">
         <h2>About Myself</h2>
         <p className="large">{description}</p>
         <hr />
