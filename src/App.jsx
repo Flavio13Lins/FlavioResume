@@ -50,7 +50,8 @@ const App = () => {
     <div
       id="main"
       style={{
-        backgroundColor: "var(--background-color)",
+        // zIndex: "-1",
+        // backgroundColor: "var(--background-color)",
       }}
     >
       <Header
