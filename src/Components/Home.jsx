@@ -28,7 +28,7 @@ const imageAltText = "Flavio Lins da Mota Nascimento photo";
 const Home = ({ shortName, title }) => {
   return (
     <section id="home" className="min-height">
-      <img className="background" src={image} alt="" />
+      <img className="background" src={image} alt="selfImage" />
       <div style={{ position: "absolute", top: "5rem", left: "2rem", width: "30rem" }}>
         <h1 className="name-home">{shortName}</h1>
         <h2 className="title-home">{title}</h2>
