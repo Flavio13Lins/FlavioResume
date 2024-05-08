@@ -6,11 +6,12 @@
 
 import React, { useState } from "react";
 
-import iconCertification from "../images/certificate.svg";
+// import iconCertification from "../images/certificate.svg";
 import iconChevronUp from "../images/chevron-up.svg";
 import iconChevronDown from "../images/chevron-down.svg";
 import iconOpenNew from "../images/open-in-new.svg";
 
+import Certificate from "../images/Certificate";
 import image from "../images/background1.svg";
 
 const imageAltText = "Green, blue and yello abstract background";
@@ -98,7 +99,8 @@ const Awards = () => {
                 {openDialog !== index && (
                   <>
                     <div className="awardIconDate">
-                      <img className="iconCert" src={iconCertification} alt="CertificationIcon" />
+                      {/* <img className="iconCert" src={iconCertification} alt="CertificationIcon" /> */}
+                      <Certificate className="iconCert" text="var(--text-color)" />
                       <h5>{skill.date}</h5>
                     </div>
                     <div style={{ alignSelf: "center" }}>
@@ -120,7 +122,8 @@ const Awards = () => {
                         setOpenDialog(-1);
                       }}
                     >
-                      <img className="iconCert" src={iconCertification} alt="CertificationIcon" />
+                      {/* <img className="iconCert" src={iconCertification} alt="CertificationIcon" /> */}
+                      <Certificate className="iconCert" text="var(--text-color)" />
                       <h5>{skill.date}</h5>
                       {openDialog !== index && (
                         <img className="iconChevron" src={iconChevronDown} alt="ChevronDown" />
