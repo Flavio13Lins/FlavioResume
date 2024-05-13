@@ -266,6 +266,7 @@ img.copyIcon:hover {
 .box {
   width: calc(50% - 40px);
   border-radius: 3px;
+  color: var(--text-color);
   border: 1px solid var(--secondary-color);
   background-color: var(--background-color);
   display: flex;
@@ -278,6 +279,7 @@ img.copyIcon:hover {
 
 .box:hover {
   border: 1px solid var(--tertiary-color);
+  color: black;
   background-color: var(--quaternary-color);
 }
 
@@ -351,6 +353,7 @@ img.copyIcon:hover {
 .btnIconTitle:hover {
   cursor: pointer;
   border: 1px solid var(--tertiary-color);
+  color: black;
   background-color: var(--quaternary-color);
 }
 
