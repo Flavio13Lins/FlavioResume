@@ -10,7 +10,7 @@ import React, { useState } from "react";
 import iconChevronUp from "../images/chevron-up.svg";
 import iconChevronDown from "../images/chevron-down.svg";
 import iconOpenNew from "../images/open-in-new.svg";
-
+// change to OpenInNew jsx file
 import Certificate from "../images/Certificate";
 import image from "../images/background1.svg";
 
