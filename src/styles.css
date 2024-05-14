@@ -53,16 +53,14 @@ section.padding {
   padding: 3rem 0;
 }
 
+.solidBackground {
+  background-color: var(--background-color);
+}
+
 .background {
-  /* TODO: discover a way to limit the hide the extended length of img */
-  /* height: 100%;
-  width: 100vmax; */
-
-  /* width:100vw;
-  height:100vh; */
-
   height: 100%;
-  width: 100%;
+  width: 100vmax;
+  background-size: cover;
   left: 50%;
   object-fit: cover;
   pointer-events: none;
