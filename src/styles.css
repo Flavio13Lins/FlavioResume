@@ -209,7 +209,7 @@ img.copyIcon {
   width: 15px;
 }
 
-img.iconChevron {
+.iconChevron {
   color: var(--quaternary-color);
   height: 24px;
   width: 24px;

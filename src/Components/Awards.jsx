@@ -11,6 +11,7 @@ import iconChevronUp from "../images/chevron-up.svg";
 import iconChevronDown from "../images/chevron-down.svg";
 // import iconOpenNew from "../images/open-in-new.svg";
 import OpenInNew from "../images/OpenInNew";
+import ChevronDown from "../images/ChevronDown";
 
 import Certificate from "../images/Certificate";
 
@@ -119,7 +120,8 @@ const Awards = () => {
                       <h4 className="awardTitle">{skill.title}</h4>
                     </div>
                     <div>
-                      <img className="iconChevron" src={iconChevronDown} alt="ChevronDown" />
+                      <ChevronDown className="iconChevron" text="var(--text-color)" />
+                      {/* <img className="iconChevron" src={iconChevronDown} alt="ChevronDown" /> */}
                     </div>
                   </>
                 )}
