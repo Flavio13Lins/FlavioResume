@@ -2,12 +2,12 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const Background1 = ({
-//   bg = "#00f",
-//   primary = "#00f",
-//   secondary = "#00f",
-//   tertiary = "#00f",
-//   quaternary = "#00f",
-//   quinary = "#00f",
+  // bg = "#00f",
+  //   primary = "#00f",
+  //   secondary = "#00f",
+  //   tertiary = "#00f",
+  //   quaternary = "#00f",
+  //   quinary = "#00f",
   className,
 }) => (
   // TODO: try passing the width and height as props to define the size of the SVG
@@ -15,9 +15,8 @@ const Background1 = ({
     <svg
       data-v-794ed883=""
       xmlns="http://www.w3.org/2000/svg"
-      fill="none"
-      //   class="pdac52"
       viewBox="0 0 1024 1024"
+      fill="#CBD5A9"
     >
       <g>
         <path

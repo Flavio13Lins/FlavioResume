@@ -10,7 +10,6 @@ const Background2 = ({
   quinary = "#00f",
   className,
 }) => (
-  // TODO: try passing the width and height as props to define the size of the SVG
   <div className={className}>
     <svg data-v-794ed883="" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 1024 1024">
       <g fill={bg}>
