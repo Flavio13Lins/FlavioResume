@@ -12,9 +12,10 @@ import iconChevronDown from "../images/chevron-down.svg";
 import iconOpenNew from "../images/open-in-new.svg";
 // change to OpenInNew jsx file
 import Certificate from "../images/Certificate";
-import image from "../images/background1.svg";
 
-const imageAltText = "Green, blue and yello abstract background";
+import Background1 from "../images/Background1";
+// import image from "../images/background1.svg";
+// const imageAltText = "Green, blue and yello abstract background";
 
 const awardList = [
   {
@@ -82,8 +83,17 @@ const Awards = () => {
   const [openDialog, setOpenDialog] = useState(-1);
 
   return (
-    <section className="padding" id="awards">
-      <img className="background" src={image} alt={imageAltText} />
+    <section className="background padding" id="awards">
+      {/* <Background1
+        className="background"
+        bg="var(--background-color)"
+        primary="var(--primary-color)"
+        secondary="var(--secondary-color)"
+        tertiary="var(--tertiary-color)"
+        quaternary="var(--quaternary-color)"
+        quinary="var(--quinary-color)"
+      /> */}
+      {/* <img className="background" src={image} alt={imageAltText} /> */}
       <div className="myAwardsContent">
         <h2>{title}</h2>
         <div className="awardList">

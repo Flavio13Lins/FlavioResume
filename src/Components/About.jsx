@@ -28,8 +28,8 @@ const detailOrQuote =
 
 const About = () => {
   return (
-    <section id="about">
-      <Background2
+    <section className="background" id="about">
+      {/* <Background2
         className="background"
         bg="var(--background-color)"
         primary="var(--primary-color)"
@@ -37,7 +37,7 @@ const About = () => {
         tertiary="var(--tertiary-color)"
         quaternary="var(--quaternary-color)"
         quinary="var(--quinary-color)"
-      />
+      /> */}
       {/* <img className="background" src={image} alt={imageAltText} /> */}
       <div className="aboutContainer">
         <h2>About Myself</h2>
