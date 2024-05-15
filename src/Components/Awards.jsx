@@ -7,10 +7,11 @@
 import React, { useState } from "react";
 
 // import iconCertification from "../images/certificate.svg";
-import iconChevronUp from "../images/chevron-up.svg";
-import iconChevronDown from "../images/chevron-down.svg";
+// import iconChevronUp from "../images/chevron-up.svg";
+// import iconChevronDown from "../images/chevron-down.svg";
 // import iconOpenNew from "../images/open-in-new.svg";
 import OpenInNew from "../images/OpenInNew";
+import ChevronUp from "../images/ChevronUp";
 import ChevronDown from "../images/ChevronDown";
 
 import Certificate from "../images/Certificate";
@@ -140,7 +141,8 @@ const Awards = () => {
                       <Certificate className="iconCert" text="var(--text-color)" />
                       <h5>{skill.date}</h5>
                       {openDialog !== index && (
-                        <img className="iconChevron" src={iconChevronDown} alt="ChevronDown" />
+                        <OpenInNew className="iconOpenNewTab" text={hoverBtn ? "black" : "var(--text-color)"} />
+                        // <img className="iconChevron" src={iconChevronDown} alt="ChevronDown" />
                       )}
                     </button>
                     <div className="awardContent">
@@ -176,7 +178,8 @@ const Awards = () => {
                         setOpenDialog(-1);
                       }}
                     >
-                      <img className="iconChevron" src={iconChevronUp} alt="ChevronUp" />
+                      {/* <img className="iconChevron" src={iconChevronUp} alt="ChevronUp" /> */}
+                      <ChevronUp className="iconChevron" text="var(--text-color)" />
                     </button>
                   </div>
                 )}
