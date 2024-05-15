@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const Background1 = ({
+const OpenInNew = ({
   //   bg = "#00f",
   text = "#00f",
   //   primary = "#00f",
@@ -22,7 +22,7 @@ const Background1 = ({
   </div>
 );
 
-Background1.propTypes = {
+OpenInNew.propTypes = {
   bg: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
   primary: PropTypes.string.isRequired,
@@ -33,4 +33,4 @@ Background1.propTypes = {
   className: PropTypes.string.isRequired,
 };
 
-export default Background1;
+export default OpenInNew;
