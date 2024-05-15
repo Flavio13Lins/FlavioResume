@@ -9,11 +9,12 @@ import React, { useState } from "react";
 // import iconCertification from "../images/certificate.svg";
 import iconChevronUp from "../images/chevron-up.svg";
 import iconChevronDown from "../images/chevron-down.svg";
-import iconOpenNew from "../images/open-in-new.svg";
-// change to OpenInNew jsx file
+// import iconOpenNew from "../images/open-in-new.svg";
+import OpenInNew from "../images/OpenInNew";
+
 import Certificate from "../images/Certificate";
 
-import Background1 from "../images/Background1";
+// import Background1 from "../images/Background1";
 // import image from "../images/background1.svg";
 // const imageAltText = "Green, blue and yello abstract background";
 
@@ -81,6 +82,7 @@ const title = "My Awards";
 
 const Awards = () => {
   const [openDialog, setOpenDialog] = useState(-1);
+  const [hoverBtn, setHover] = useState(false);
 
   return (
     <section className="background padding" id="awards">
@@ -153,9 +155,14 @@ const Awards = () => {
                         <button
                           className="unbuttonize"
                           onClick={() => window.open(skill.link, "_blank")}
+                          onMouseOver={() => setHover(true)}
+                          onMouseLeave={() => setHover(false)}
+                          onFocus={() => setHover(true)}
                         >
                           <div className="btnIconTitle">
-                            <img className="iconOpenNewTab" src={iconOpenNew} alt="OpenNewTab" />
+                            <span>{hoverBtn}</span>
+                            <OpenInNew className="iconOpenNewTab" text={hoverBtn ? "black" : "var(--text-color)"} />
+                            {/* <img className="iconOpenNewTab" src={iconOpenNew} alt="OpenNewTab" /> */}
                             View Certificate
                           </div>
                         </button>

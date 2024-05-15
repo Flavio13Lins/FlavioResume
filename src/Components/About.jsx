@@ -7,7 +7,7 @@
 import React from "react";
 
 // import image from "../images/background2.svg";
-import Background2 from "../images/Background2";
+// import Background2 from "../images/Background2";
 
 // const imageAltText = "Green, blue and yello abstract background";
 
