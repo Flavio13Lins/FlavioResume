@@ -22,9 +22,9 @@ const Home = ({ shortName, title }) => {
         <h1 className="name-home">{shortName}</h1>
         <h2 className="title-home">{title}</h2>
       </div>
-      <div style={{ position: "absolute", bottom: "3rem", left: "50%" }}>
+      <a href="#about" style={{ position: "absolute", bottom: "3rem", left: "50%" }}>
         <img src={arrowSvg} style={{ height: "3rem", width: "3rem" }} alt="arrow-down" />
-      </div>
+      </a>
     </section>
   );
 };
