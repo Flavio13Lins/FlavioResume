@@ -90,7 +90,7 @@ const Awards = () => {
         quinary="var(--quinary-color)"
       /> */}
       <div className="myAwardsContent">
-        <h2>{title}</h2>
+        <h2 className="awardTitle">{title}</h2>
         <div className="awardList">
           {awardList.map((skill, index) => {
             return openDialog !== index ? (

@@ -400,6 +400,15 @@ img.copyIcon:hover {
   text-align: center;
 }
 
+h2.awardTitle {
+  padding: 0 10px;
+  margin: 0 20px;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  border-radius: 3px;
+  border: 1px solid var(--secondary-color);
+}
+
 .awardTitle {
   padding: 0 10px;
   margin: 0;
