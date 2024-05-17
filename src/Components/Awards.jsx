@@ -6,19 +6,11 @@
 
 import React, { useState } from "react";
 
-// import iconCertification from "../images/certificate.svg";
-// import iconChevronUp from "../images/chevron-up.svg";
-// import iconChevronDown from "../images/chevron-down.svg";
-// import iconOpenNew from "../images/open-in-new.svg";
 import OpenInNew from "../images/OpenInNew";
 import ChevronUp from "../images/ChevronUp";
 import ChevronDown from "../images/ChevronDown";
 
 import Certificate from "../images/Certificate";
-
-// import Background1 from "../images/Background1";
-// import image from "../images/background1.svg";
-// const imageAltText = "Green, blue and yello abstract background";
 
 const awardList = [
   {
@@ -87,7 +79,7 @@ const Awards = () => {
   const [hoverBtn, setHover] = useState(false);
 
   return (
-    <section className="background padding" id="awards">
+    <section className="background" id="awards">
       {/* <Background1
         className="background"
         bg="var(--background-color)"
@@ -97,7 +89,6 @@ const Awards = () => {
         quaternary="var(--quaternary-color)"
         quinary="var(--quinary-color)"
       /> */}
-      {/* <img className="background" src={image} alt={imageAltText} /> */}
       <div className="myAwardsContent">
         <h2>{title}</h2>
         <div className="awardList">
@@ -113,7 +104,6 @@ const Awards = () => {
                 {openDialog !== index && (
                   <>
                     <div className="awardIconDate">
-                      {/* <img className="iconCert" src={iconCertification} alt="CertificationIcon" /> */}
                       <Certificate className="iconCert" text="var(--text-color)" />
                       <h5>{skill.date}</h5>
                     </div>
@@ -122,7 +112,6 @@ const Awards = () => {
                     </div>
                     <div>
                       <ChevronDown className="iconChevron" text="var(--text-color)" />
-                      {/* <img className="iconChevron" src={iconChevronDown} alt="ChevronDown" /> */}
                     </div>
                   </>
                 )}
@@ -137,12 +126,13 @@ const Awards = () => {
                         setOpenDialog(-1);
                       }}
                     >
-                      {/* <img className="iconCert" src={iconCertification} alt="CertificationIcon" /> */}
                       <Certificate className="iconCert" text="var(--text-color)" />
                       <h5>{skill.date}</h5>
                       {openDialog !== index && (
-                        <OpenInNew className="iconOpenNewTab" text={hoverBtn ? "black" : "var(--text-color)"} />
-                        // <img className="iconChevron" src={iconChevronDown} alt="ChevronDown" />
+                        <OpenInNew
+                          className="iconOpenNewTab"
+                          text={hoverBtn ? "black" : "var(--text-color)"}
+                        />
                       )}
                     </button>
                     <div className="awardContent">
@@ -165,8 +155,10 @@ const Awards = () => {
                         >
                           <div className="btnIconTitle">
                             <span>{hoverBtn}</span>
-                            <OpenInNew className="iconOpenNewTab" text={hoverBtn ? "black" : "var(--text-color)"} />
-                            {/* <img className="iconOpenNewTab" src={iconOpenNew} alt="OpenNewTab" /> */}
+                            <OpenInNew
+                              className="iconOpenNewTab"
+                              text={hoverBtn ? "black" : "var(--text-color)"}
+                            />
                             View Certificate
                           </div>
                         </button>
@@ -178,7 +170,6 @@ const Awards = () => {
                         setOpenDialog(-1);
                       }}
                     >
-                      {/* <img className="iconChevron" src={iconChevronUp} alt="ChevronUp" /> */}
                       <ChevronUp className="iconChevron" text="var(--text-color)" />
                     </button>
                   </div>
