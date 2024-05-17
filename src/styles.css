@@ -63,11 +63,11 @@ section.padding {
   background-size: cover;
   left: 50%;
   object-fit: cover;
-  pointer-events: none;
+  /* pointer-events: none; */
   position: absolute;
   top: 0;
   transform: translate(-50%, 0);
-  z-index: -1;
+  /* z-index: -1; */
 }
 
 .background {
@@ -99,7 +99,7 @@ section.padding {
 
 
   background: url(images/background2.svg) repeat center center fixed; 
-  z-index: -2;
+  /* z-index: -2; */
 }
 
 h1 {
@@ -395,7 +395,7 @@ img.copyIcon:hover {
 .myAwardsContent {
   background-color: transparent;
   width: 70%;
-  padding: 4rem;
+  padding: 2rem 4rem;
   margin: 3rem auto;
   text-align: center;
 }
