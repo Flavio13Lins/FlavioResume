@@ -12,7 +12,6 @@ import PropTypes from "prop-types";
 import image from "../images/self-photho.jpeg";
 
 const imageAltText = "Flavio Lins da Mota Nascimento photo";
-// const imageAltText = "I am passionate about technology, Cloud Computing, and building innovative solutions. I am a graduated B.Sc. in Computer Engineering, I have been working with software development for over 5 years. I am a IBM Certified: Artificial Intelligence Practitioner. I also help a students community to contribute in global hackathons events.";
 
 const Home = ({ shortName, title }) => {
   return (
