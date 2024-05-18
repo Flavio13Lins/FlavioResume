@@ -2902,7 +2902,7 @@ try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 /**
- * Entry point of application, where App is rendered within the div with the id of "app" 
+ * Entry point of application, where App is rendered within the div with the id of "app"
  */ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _client = require("react-dom/client");
@@ -5638,6 +5638,8 @@ var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _about = require("./Components/About");
 var _aboutDefault = parcelHelpers.interopDefault(_about);
+var _awards = require("./Components/Awards");
+var _awardsDefault = parcelHelpers.interopDefault(_awards);
 var _footer = require("./Components/Footer");
 var _footerDefault = parcelHelpers.interopDefault(_footer);
 var _header = require("./Components/Header");
@@ -5677,6 +5679,10 @@ const quinaryColor = "#29374D";
 const App = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         id: "main",
+        style: {
+            backgroundColor: "var(--background-color)",
+            color: "var(--text-color)"
+        },
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {
                 primaryColor: primaryColor,
@@ -5686,7 +5692,7 @@ const App = ()=>{
                 quinaryColor: quinaryColor
             }, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 50,
+                lineNumber: 57,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _homeDefault.default), {
@@ -5694,17 +5700,22 @@ const App = ()=>{
                 title: siteProps.title
             }, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 57,
+                lineNumber: 64,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutDefault.default), {}, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 58,
+                lineNumber: 65,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _portfolioDefault.default), {}, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 59,
+                lineNumber: 66,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _awardsDefault.default), {}, void 0, false, {
+                fileName: "src/App.jsx",
+                lineNumber: 67,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerDefault.default), {
@@ -5716,13 +5727,13 @@ const App = ()=>{
                 quinaryColor: quinaryColor
             }, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 60,
+                lineNumber: 68,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/App.jsx",
-        lineNumber: 49,
+        lineNumber: 50,
         columnNumber: 5
     }, undefined);
 };
@@ -5736,7 +5747,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Components/About":"kouZu","./Components/Footer":"7GWgX","./Components/Header":"9Dt2F","./Components/Home":"jIEVO","./Components/Portfolio":"lCaEt","./styles.css":"lW6qc","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"kouZu":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Components/About":"kouZu","./Components/Footer":"7GWgX","./Components/Header":"9Dt2F","./Components/Home":"jIEVO","./Components/Portfolio":"lCaEt","./styles.css":"lW6qc","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./Components/Awards":"ayBFk"}],"kouZu":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$17a8 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -5752,25 +5763,8 @@ var _jsxDevRuntime = require("react/jsx-dev-runtime");
  * Space for you to describe more about yourself.
  */ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
-/**
- * About background image
- *
- * Below is a sample image. Upload the image of your choice into the "images"
- * directory and import here for use. Then, set imageAltText to string that
- * represents what you see in that image.
- *
- * Need an image? Check out https://unsplash.com to download a image you
- * freely use on your site.
- */ var _backgroundPng = require("../images/background.png");
-var _backgroundPngDefault = parcelHelpers.interopDefault(_backgroundPng);
-const imageAltText = "purple and blue abstract background";
-/**
- * Sort description that expands on your title on the Home component.
- */ const description = "I am a graduated B.Sc. in Computer Engineering, I have been working with software development for over 5 years. I am a IBM Certified: Artificial Intelligence Practitioner.";
-/**
- * List of some of skills or technologies you work on, are learning,
- * passionate about, or enjoy,
- */ const skillsList = [
+const description = "I am a graduated B.Sc. in Computer Engineering, I have been working with software development for over 5 years. I am a IBM Certified: Artificial Intelligence Practitioner.";
+const skillsList = [
     "Analytical Thinking",
     "Detail-Oriented",
     "Empathy",
@@ -5778,91 +5772,70 @@ const imageAltText = "purple and blue abstract background";
     "Quickly Grasp New Concepts",
     "Easygoing", 
 ];
-/**
- * Use this to give more information about what you are passionate about,
- * how you best work, or even a quote. This will help someone learn more
- * about you on a professional level.
- */ const detailOrQuote = "I am passionate about technology, Cloud Computing, and building innovative solutions. I also help a students community to contribute in global hackathons events.";
+const detailOrQuote = "I am passionate about technology, Cloud Computing, and building innovative solutions. I also help a students community to contribute in global hackathons events.";
 const About = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
-        className: "padding",
+        className: "background1",
         id: "about",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                className: "background",
-                src: (0, _backgroundPngDefault.default),
-                alt: imageAltText
-            }, void 0, false, {
-                fileName: "src/Components/About.jsx",
-                lineNumber: 53,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                style: {
-                    backgroundColor: "white",
-                    width: "50%",
-                    padding: "4rem",
-                    margin: "3rem auto",
-                    textAlign: "center"
-                },
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                        children: "About Myself"
-                    }, void 0, false, {
-                        fileName: "src/Components/About.jsx",
-                        lineNumber: 63,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                        className: "large",
-                        children: description
-                    }, void 0, false, {
-                        fileName: "src/Components/About.jsx",
-                        lineNumber: 64,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("hr", {}, void 0, false, {
-                        fileName: "src/Components/About.jsx",
-                        lineNumber: 65,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
-                        className: "skills-container",
-                        children: skillsList.map((skill)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                children: skill
-                            }, skill, false, {
-                                fileName: "src/Components/About.jsx",
-                                lineNumber: 68,
-                                columnNumber: 13
-                            }, undefined))
-                    }, void 0, false, {
-                        fileName: "src/Components/About.jsx",
-                        lineNumber: 66,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("hr", {}, void 0, false, {
-                        fileName: "src/Components/About.jsx",
-                        lineNumber: 71,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                        className: "text-detail",
-                        children: detailOrQuote
-                    }, void 0, false, {
-                        fileName: "src/Components/About.jsx",
-                        lineNumber: 72,
-                        columnNumber: 9
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/Components/About.jsx",
-                lineNumber: 54,
-                columnNumber: 7
-            }, undefined)
-        ]
-    }, void 0, true, {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "aboutContainer",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                    children: "About Myself"
+                }, void 0, false, {
+                    fileName: "src/Components/About.jsx",
+                    lineNumber: 28,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                    className: "large",
+                    children: description
+                }, void 0, false, {
+                    fileName: "src/Components/About.jsx",
+                    lineNumber: 29,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("hr", {}, void 0, false, {
+                    fileName: "src/Components/About.jsx",
+                    lineNumber: 30,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                    className: "skills-container",
+                    children: skillsList.map((skill)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            children: skill
+                        }, skill, false, {
+                            fileName: "src/Components/About.jsx",
+                            lineNumber: 33,
+                            columnNumber: 13
+                        }, undefined))
+                }, void 0, false, {
+                    fileName: "src/Components/About.jsx",
+                    lineNumber: 31,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("hr", {}, void 0, false, {
+                    fileName: "src/Components/About.jsx",
+                    lineNumber: 36,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                    className: "text-detail",
+                    children: detailOrQuote
+                }, void 0, false, {
+                    fileName: "src/Components/About.jsx",
+                    lineNumber: 37,
+                    columnNumber: 9
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "src/Components/About.jsx",
+            lineNumber: 27,
+            columnNumber: 7
+        }, undefined)
+    }, void 0, false, {
         fileName: "src/Components/About.jsx",
-        lineNumber: 52,
+        lineNumber: 26,
         columnNumber: 5
     }, undefined);
 };
@@ -5876,7 +5849,7 @@ $RefreshReg$(_c, "About");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../images/background.png":"bwdkN"}],"gkKU3":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"gkKU3":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -6026,44 +5999,7 @@ function registerExportsForReactRefresh(module1) {
     }
 }
 
-},{"react-refresh/runtime":"786KC"}],"bwdkN":[function(require,module,exports) {
-module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "background.cc312e9e.png" + "?" + Date.now();
-
-},{"./helpers/bundle-url":"lgJ39"}],"lgJ39":[function(require,module,exports) {
-"use strict";
-var bundleURL = {};
-function getBundleURLCached(id) {
-    var value = bundleURL[id];
-    if (!value) {
-        value = getBundleURL();
-        bundleURL[id] = value;
-    }
-    return value;
-}
-function getBundleURL() {
-    try {
-        throw new Error();
-    } catch (err) {
-        var matches = ("" + err.stack).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^)\n]+/g);
-        if (matches) // The first two stack frames will be this function and getBundleURLCached.
-        // Use the 3rd one, which will be a runtime in the original bundle.
-        return getBaseURL(matches[2]);
-    }
-    return "/";
-}
-function getBaseURL(url) {
-    return ("" + url).replace(/^((?:https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/.+)\/[^/]+$/, "$1") + "/";
-} // TODO: Replace uses with `new URL(url).origin` when ie11 is no longer supported.
-function getOrigin(url) {
-    var matches = ("" + url).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^/]+/);
-    if (!matches) throw new Error("Origin not found");
-    return matches[0];
-}
-exports.getBundleURL = getBundleURLCached;
-exports.getBaseURL = getBaseURL;
-exports.getOrigin = getOrigin;
-
-},{}],"7GWgX":[function(require,module,exports) {
+},{"react-refresh/runtime":"786KC"}],"7GWgX":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$8b43 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -6101,7 +6037,7 @@ var _twitterSvg = require("../images/socials/twitter.svg");
 var _twitterSvgDefault = parcelHelpers.interopDefault(_twitterSvg);
 var _youtubeSvg = require("../images/socials/youtube.svg");
 var _youtubeSvgDefault = parcelHelpers.interopDefault(_youtubeSvg);
-var _copySvg = require("../images/socials/copy.svg");
+var _copySvg = require("../images/copy.svg");
 var _copySvgDefault = parcelHelpers.interopDefault(_copySvg);
 var _s = $RefreshSig$();
 /**
@@ -6413,7 +6349,7 @@ $RefreshReg$(_c, "Footer");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"21dqq","prop-types":"7wKI2","../images/socials/devdotto.svg":"69cpV","../images/socials/github.svg":"vP2m6","../images/socials/instagram.svg":"jH0VA","../images/socials/medium.svg":"cDDa0","../images/socials/twitter.svg":"flM6L","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../images/socials/youtube.svg":"hmN7D","../images/socials/copy.svg":"7JQ5f","react/jsx-dev-runtime":"iTorj","../images/socials/discord.svg":"hsAGd","../images/socials/linkedin.svg":"5XSmz"}],"7wKI2":[function(require,module,exports) {
+},{"react":"21dqq","prop-types":"7wKI2","../images/socials/devdotto.svg":"69cpV","../images/socials/github.svg":"vP2m6","../images/socials/instagram.svg":"jH0VA","../images/socials/medium.svg":"cDDa0","../images/socials/twitter.svg":"flM6L","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../images/socials/youtube.svg":"hmN7D","react/jsx-dev-runtime":"iTorj","../images/socials/discord.svg":"hsAGd","../images/socials/linkedin.svg":"5XSmz","../images/copy.svg":"gqozC"}],"7wKI2":[function(require,module,exports) {
 var ReactIs = require("react-is");
 // By explicitly using `prop-types` you are opting into new development behavior.
 // http://fb.me/prop-types-in-prod
@@ -7157,7 +7093,41 @@ module.exports = checkPropTypes;
 },{"./lib/ReactPropTypesSecret":"jZTZJ","./lib/has":"fqKuf"}],"69cpV":[function(require,module,exports) {
 module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "devdotto.3bb7afaf.svg" + "?" + Date.now();
 
-},{"./helpers/bundle-url":"lgJ39"}],"vP2m6":[function(require,module,exports) {
+},{"./helpers/bundle-url":"lgJ39"}],"lgJ39":[function(require,module,exports) {
+"use strict";
+var bundleURL = {};
+function getBundleURLCached(id) {
+    var value = bundleURL[id];
+    if (!value) {
+        value = getBundleURL();
+        bundleURL[id] = value;
+    }
+    return value;
+}
+function getBundleURL() {
+    try {
+        throw new Error();
+    } catch (err) {
+        var matches = ("" + err.stack).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^)\n]+/g);
+        if (matches) // The first two stack frames will be this function and getBundleURLCached.
+        // Use the 3rd one, which will be a runtime in the original bundle.
+        return getBaseURL(matches[2]);
+    }
+    return "/";
+}
+function getBaseURL(url) {
+    return ("" + url).replace(/^((?:https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/.+)\/[^/]+$/, "$1") + "/";
+} // TODO: Replace uses with `new URL(url).origin` when ie11 is no longer supported.
+function getOrigin(url) {
+    var matches = ("" + url).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^/]+/);
+    if (!matches) throw new Error("Origin not found");
+    return matches[0];
+}
+exports.getBundleURL = getBundleURLCached;
+exports.getBaseURL = getBaseURL;
+exports.getOrigin = getOrigin;
+
+},{}],"vP2m6":[function(require,module,exports) {
 module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "github.51e0fbb2.svg" + "?" + Date.now();
 
 },{"./helpers/bundle-url":"lgJ39"}],"jH0VA":[function(require,module,exports) {
@@ -7172,14 +7142,14 @@ module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "twitte
 },{"./helpers/bundle-url":"lgJ39"}],"hmN7D":[function(require,module,exports) {
 module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "youtube.c3557793.svg" + "?" + Date.now();
 
-},{"./helpers/bundle-url":"lgJ39"}],"7JQ5f":[function(require,module,exports) {
-module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "copy.491ef21b.svg" + "?" + Date.now();
-
 },{"./helpers/bundle-url":"lgJ39"}],"hsAGd":[function(require,module,exports) {
 module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "discord.a58caf0e.svg" + "?" + Date.now();
 
 },{"./helpers/bundle-url":"lgJ39"}],"5XSmz":[function(require,module,exports) {
 module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "linkedin.49c2dcdf.svg" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"gqozC":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "copy.b3150bc0.svg" + "?" + Date.now();
 
 },{"./helpers/bundle-url":"lgJ39"}],"9Dt2F":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$2a62 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
@@ -7231,7 +7201,7 @@ const Header = (props)=>{
                 children: "About"
             }, void 0, false, {
                 fileName: "src/Components/Header.jsx",
-                lineNumber: 29,
+                lineNumber: 31,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -7240,7 +7210,16 @@ const Header = (props)=>{
                 children: "Portfolio"
             }, void 0, false, {
                 fileName: "src/Components/Header.jsx",
-                lineNumber: 30,
+                lineNumber: 34,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                className: "header-link",
+                href: "#awards",
+                children: "My Awards"
+            }, void 0, false, {
+                fileName: "src/Components/Header.jsx",
+                lineNumber: 37,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -7249,7 +7228,7 @@ const Header = (props)=>{
                 children: "Contact"
             }, void 0, false, {
                 fileName: "src/Components/Header.jsx",
-                lineNumber: 31,
+                lineNumber: 40,
                 columnNumber: 7
             }, undefined)
         ]
@@ -7297,32 +7276,21 @@ var _downArrowSvg = require("../images/down-arrow.svg");
 var _downArrowSvgDefault = parcelHelpers.interopDefault(_downArrowSvg);
 var _propTypes = require("prop-types");
 var _propTypesDefault = parcelHelpers.interopDefault(_propTypes);
-/**
- * Home background image
- *
- * Below is a sample image. Upload the image of your choice into the "images"
- * directory and import here for use. Then, set imageAltText to string that
- * represents what you see in that image.
- *
- *
- * Need an image? Check out https://unsplash.com to download a photo you
- * freely use on your site.
- */ var _selfPhothoJpeg = require("../images/self-photho.jpeg");
+var _selfPhothoJpeg = require("../images/self-photho.jpeg");
 var _selfPhothoJpegDefault = parcelHelpers.interopDefault(_selfPhothoJpeg);
 const imageAltText = "Flavio Lins da Mota Nascimento photo";
-// const imageAltText = "I am passionate about technology, Cloud Computing, and building innovative solutions. I am a graduated B.Sc. in Computer Engineering, I have been working with software development for over 5 years. I am a IBM Certified: Artificial Intelligence Practitioner. I also help a students community to contribute in global hackathons events.";
 const Home = ({ shortName , title  })=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
         id: "home",
         className: "min-height",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                className: "background",
+                className: "homeBackground",
                 src: (0, _selfPhothoJpegDefault.default),
-                alt: ""
+                alt: imageAltText
             }, void 0, false, {
                 fileName: "src/Components/Home.jsx",
-                lineNumber: 31,
+                lineNumber: 19,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -7338,7 +7306,7 @@ const Home = ({ shortName , title  })=>{
                         children: shortName
                     }, void 0, false, {
                         fileName: "src/Components/Home.jsx",
-                        lineNumber: 33,
+                        lineNumber: 21,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
@@ -7346,16 +7314,17 @@ const Home = ({ shortName , title  })=>{
                         children: title
                     }, void 0, false, {
                         fileName: "src/Components/Home.jsx",
-                        lineNumber: 34,
+                        lineNumber: 22,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Components/Home.jsx",
-                lineNumber: 32,
+                lineNumber: 20,
                 columnNumber: 7
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                href: "#about",
                 style: {
                     position: "absolute",
                     bottom: "3rem",
@@ -7367,21 +7336,21 @@ const Home = ({ shortName , title  })=>{
                         height: "3rem",
                         width: "3rem"
                     },
-                    alt: imageAltText
+                    alt: "arrow-down"
                 }, void 0, false, {
                     fileName: "src/Components/Home.jsx",
-                    lineNumber: 37,
+                    lineNumber: 25,
                     columnNumber: 9
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/Components/Home.jsx",
-                lineNumber: 36,
+                lineNumber: 24,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/Components/Home.jsx",
-        lineNumber: 30,
+        lineNumber: 18,
         columnNumber: 5
     }, undefined);
 };
@@ -7479,7 +7448,7 @@ const imageAltText = "Images of my developed projects.";
 ];
 const Portfolio = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
-        className: "padding",
+        className: "solidBackground",
         id: "portfolio",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
@@ -7579,7 +7548,617 @@ $RefreshReg$(_c, "Portfolio");
 },{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../images/projectscollage.png":"a8R1p"}],"a8R1p":[function(require,module,exports) {
 module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "projectscollage.8ba2c3c4.png" + "?" + Date.now();
 
-},{"./helpers/bundle-url":"lgJ39"}],"lW6qc":[function() {},{}],"lOjBx":[function(require,module,exports) {
+},{"./helpers/bundle-url":"lgJ39"}],"lW6qc":[function() {},{}],"ayBFk":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$4f58 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$4f58.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+/**
+ * Awards component
+ *
+ * Space for you to describe more my Awards and Certifications.
+ */ var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _openInNew = require("../images/OpenInNew");
+var _openInNewDefault = parcelHelpers.interopDefault(_openInNew);
+var _chevronUp = require("../images/ChevronUp");
+var _chevronUpDefault = parcelHelpers.interopDefault(_chevronUp);
+var _chevronDown = require("../images/ChevronDown");
+var _chevronDownDefault = parcelHelpers.interopDefault(_chevronDown);
+var _certificate = require("../images/Certificate");
+var _certificateDefault = parcelHelpers.interopDefault(_certificate);
+var _s = $RefreshSig$();
+const awardList = [
+    {
+        title: "Perform Foundational Data, ML, and AI Tasks in Google Cloud - Google",
+        date: "Apr 2024",
+        summary: "Skill Badge - Validates expertise in foundational tasks related to data management, Machine Learning, and Artificial Intelligence, demonstrating proficiency in essential data-driven operations.",
+        link: "https://www.cloudskillsboost.google/public_profiles/16c2a5bc-194f-4858-a1c8-89e15649a600/badges/8610697"
+    },
+    {
+        title: "Build and Secure Networks - Google",
+        date: "Mar 2024",
+        summary: "Skill Badge - Acknowledged proficiency in building and securing networks using Google Cloud services.",
+        link: "https://www.cloudskillsboost.google/public_profiles/16c2a5bc-194f-4858-a1c8-89e15649a600/badges/8499981"
+    },
+    {
+        title: "Perform Foundational Infrastructure Tasks - Google",
+        date: "Mar 2024",
+        summary: "Skill Badge - Certified in performing foundational infrastructure tasks in Google Cloud, showcasing expertise in cloud computing.",
+        link: "https://www.cloudskillsboost.google/public_profiles/16c2a5bc-194f-4858-a1c8-89e15649a600/badges/8450280"
+    },
+    {
+        title: "Create and Manage Cloud Resources - Google",
+        date: "Mar 2024",
+        summary: "Skill Badge - Recognized for expertise in creating and managing cloud resources, demonstrating proficiency in leveraging Google Cloud technologies.",
+        link: "https://www.cloudskillsboost.google/public_profiles/16c2a5bc-194f-4858-a1c8-89e15649a600/badges/8365802"
+    },
+    {
+        title: "Artificial Intelligence Practitioner - IBM",
+        date: "Jan 2022",
+        summary: "Skill Badge - Demonstrates advanced proficiency in AI technologies, encompassing design, implementation, and optimization. Highlights a strong grasp of AI concepts and practical applications.",
+        link: "https://www.credly.com/badges/33c14190-e66a-41bf-9c23-40cd801c7388"
+    },
+    {
+        title: "Python for Natural Language Processing - ICMC USP",
+        date: "Dec 2021",
+        summary: "Recognized expertise in Python for Natural Language Processing (NLP). Showcasing proficiency in text analysis and language-related tasks.",
+        link: "https://drive.google.com/file/d/190Wxb1V1V7EejaNolCrFDutTw8kNK3D9/view"
+    },
+    {
+        title: "Concepts and Fundamentals: Programming Logic, Object Orientation, Swift, JavaScript and RESTful API - HACKATRUCK & MAKERSPACE",
+        date: "Mar 2019",
+        summary: "This certificate attests to a strong foundation in programming concepts and versatile application development skills gained through comprehensive training.",
+        link: "https://drive.google.com/file/d/1Fsvd56qMkYZXfRZArewXqx3VW6OMG4Nn/view"
+    },
+    {
+        title: "Cloud Services Practices using Swift with an Emphasis on IoT - HACKATRUCK & MAKERSPACE",
+        date: "May 2019",
+        summary: "Proficient in cloud services with a focus on Swift for IoT applications. Hands-on experience, highlight practical skills in developing cloud-based solutions for Swift and IoT technologies.",
+        link: "https://drive.google.com/file/d/1Dl0k4WAXyr2CMZeQiRHIevjJ0bqWOuzh/view"
+    }, 
+];
+const title = "My Awards";
+const Awards = ()=>{
+    _s();
+    const [openDialog, setOpenDialog] = (0, _react.useState)(-1);
+    const [hoverBtn, setHover] = (0, _react.useState)(false);
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
+        className: "background2",
+        id: "awards",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "myAwardsContent",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                    className: "awardTitle",
+                    children: title
+                }, void 0, false, {
+                    fileName: "src/Components/Awards.jsx",
+                    lineNumber: 84,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "awardList",
+                    children: awardList.map((skill, index)=>{
+                        return openDialog !== index ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                            className: "unbuttonize awardCardClosed",
+                            onClick: ()=>{
+                                setOpenDialog(index);
+                            },
+                            children: openDialog !== index && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "awardIconDate",
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _certificateDefault.default), {
+                                                className: "iconCert",
+                                                text: "var(--text-color)"
+                                            }, void 0, false, {
+                                                fileName: "src/Components/Awards.jsx",
+                                                lineNumber: 98,
+                                                columnNumber: 23
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h5", {
+                                                children: skill.date
+                                            }, void 0, false, {
+                                                fileName: "src/Components/Awards.jsx",
+                                                lineNumber: 99,
+                                                columnNumber: 23
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/Components/Awards.jsx",
+                                        lineNumber: 97,
+                                        columnNumber: 21
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        style: {
+                                            alignSelf: "center"
+                                        },
+                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                                            className: "awardTitle",
+                                            children: skill.title
+                                        }, void 0, false, {
+                                            fileName: "src/Components/Awards.jsx",
+                                            lineNumber: 102,
+                                            columnNumber: 23
+                                        }, undefined)
+                                    }, void 0, false, {
+                                        fileName: "src/Components/Awards.jsx",
+                                        lineNumber: 101,
+                                        columnNumber: 21
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _chevronDownDefault.default), {
+                                            className: "iconChevron",
+                                            text: "var(--text-color)"
+                                        }, void 0, false, {
+                                            fileName: "src/Components/Awards.jsx",
+                                            lineNumber: 105,
+                                            columnNumber: 23
+                                        }, undefined)
+                                    }, void 0, false, {
+                                        fileName: "src/Components/Awards.jsx",
+                                        lineNumber: 104,
+                                        columnNumber: 21
+                                    }, undefined)
+                                ]
+                            }, void 0, true)
+                        }, skill, false, {
+                            fileName: "src/Components/Awards.jsx",
+                            lineNumber: 88,
+                            columnNumber: 15
+                        }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            children: openDialog === index && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "awardCardOpened",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                        className: "unbuttonize awardIconDate",
+                                        onClick: ()=>{
+                                            setOpenDialog(-1);
+                                        },
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _certificateDefault.default), {
+                                                className: "iconCert",
+                                                text: "var(--text-color)"
+                                            }, void 0, false, {
+                                                fileName: "src/Components/Awards.jsx",
+                                                lineNumber: 120,
+                                                columnNumber: 23
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h5", {
+                                                children: skill.date
+                                            }, void 0, false, {
+                                                fileName: "src/Components/Awards.jsx",
+                                                lineNumber: 121,
+                                                columnNumber: 23
+                                            }, undefined),
+                                            openDialog !== index && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _openInNewDefault.default), {
+                                                className: "iconOpenNewTab",
+                                                text: hoverBtn ? "black" : "var(--text-color)"
+                                            }, void 0, false, {
+                                                fileName: "src/Components/Awards.jsx",
+                                                lineNumber: 123,
+                                                columnNumber: 25
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/Components/Awards.jsx",
+                                        lineNumber: 114,
+                                        columnNumber: 21
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "awardContent",
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                                className: "unbuttonize",
+                                                onClick: ()=>{
+                                                    setOpenDialog(-1);
+                                                },
+                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                                                    className: "awardTitle",
+                                                    children: skill.title
+                                                }, void 0, false, {
+                                                    fileName: "src/Components/Awards.jsx",
+                                                    lineNumber: 136,
+                                                    columnNumber: 25
+                                                }, undefined)
+                                            }, void 0, false, {
+                                                fileName: "src/Components/Awards.jsx",
+                                                lineNumber: 130,
+                                                columnNumber: 23
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                children: [
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                                        children: skill.summary
+                                                    }, void 0, false, {
+                                                        fileName: "src/Components/Awards.jsx",
+                                                        lineNumber: 139,
+                                                        columnNumber: 25
+                                                    }, undefined),
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                                        className: "unbuttonize",
+                                                        onClick: ()=>window.open(skill.link, "_blank"),
+                                                        onMouseOver: ()=>setHover(true),
+                                                        onMouseLeave: ()=>setHover(false),
+                                                        onFocus: ()=>setHover(true),
+                                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                            className: "btnIconTitle",
+                                                            children: [
+                                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                                    children: hoverBtn
+                                                                }, void 0, false, {
+                                                                    fileName: "src/Components/Awards.jsx",
+                                                                    lineNumber: 148,
+                                                                    columnNumber: 29
+                                                                }, undefined),
+                                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _openInNewDefault.default), {
+                                                                    className: "iconOpenNewTab",
+                                                                    text: hoverBtn ? "black" : "var(--text-color)"
+                                                                }, void 0, false, {
+                                                                    fileName: "src/Components/Awards.jsx",
+                                                                    lineNumber: 149,
+                                                                    columnNumber: 29
+                                                                }, undefined),
+                                                                "View Certificate"
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "src/Components/Awards.jsx",
+                                                            lineNumber: 147,
+                                                            columnNumber: 27
+                                                        }, undefined)
+                                                    }, void 0, false, {
+                                                        fileName: "src/Components/Awards.jsx",
+                                                        lineNumber: 140,
+                                                        columnNumber: 25
+                                                    }, undefined)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "src/Components/Awards.jsx",
+                                                lineNumber: 138,
+                                                columnNumber: 23
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/Components/Awards.jsx",
+                                        lineNumber: 129,
+                                        columnNumber: 21
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                        className: "unbuttonize chevronUpOnSide",
+                                        onClick: ()=>{
+                                            setOpenDialog(-1);
+                                        },
+                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _chevronUpDefault.default), {
+                                            className: "iconChevron",
+                                            text: "var(--text-color)"
+                                        }, void 0, false, {
+                                            fileName: "src/Components/Awards.jsx",
+                                            lineNumber: 164,
+                                            columnNumber: 23
+                                        }, undefined)
+                                    }, void 0, false, {
+                                        fileName: "src/Components/Awards.jsx",
+                                        lineNumber: 158,
+                                        columnNumber: 21
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/Components/Awards.jsx",
+                                lineNumber: 113,
+                                columnNumber: 19
+                            }, undefined)
+                        }, skill, false, {
+                            fileName: "src/Components/Awards.jsx",
+                            lineNumber: 111,
+                            columnNumber: 15
+                        }, undefined);
+                    })
+                }, void 0, false, {
+                    fileName: "src/Components/Awards.jsx",
+                    lineNumber: 85,
+                    columnNumber: 9
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "src/Components/Awards.jsx",
+            lineNumber: 83,
+            columnNumber: 7
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/Components/Awards.jsx",
+        lineNumber: 82,
+        columnNumber: 5
+    }, undefined);
+};
+_s(Awards, "G1gq6K7JXhBYi4xrZCs4faAvQ8c=");
+_c = Awards;
+exports.default = Awards;
+var _c;
+$RefreshReg$(_c, "Awards");
+
+  $parcel$ReactRefreshHelpers$4f58.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../images/OpenInNew":"fCgpo","../images/ChevronUp":"90pZJ","../images/ChevronDown":"3biyS","../images/Certificate":"csdxi"}],"fCgpo":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$2966 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$2966.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _propTypes = require("prop-types");
+var _propTypesDefault = parcelHelpers.interopDefault(_propTypes);
+const OpenInNew = ({ text ="#00f" , className  })=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: className,
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
+            xmlns: "http://www.w3.org/2000/svg",
+            viewBox: "0 0 24 24",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("title", {
+                    children: "open-in-new"
+                }, void 0, false, {
+                    fileName: "src/images/OpenInNew.jsx",
+                    lineNumber: 7,
+                    columnNumber: 7
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
+                    fill: text,
+                    d: "M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"
+                }, void 0, false, {
+                    fileName: "src/images/OpenInNew.jsx",
+                    lineNumber: 8,
+                    columnNumber: 7
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "src/images/OpenInNew.jsx",
+            lineNumber: 6,
+            columnNumber: 5
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/images/OpenInNew.jsx",
+        lineNumber: 5,
+        columnNumber: 3
+    }, undefined);
+_c = OpenInNew;
+OpenInNew.propTypes = {
+    bg: (0, _propTypesDefault.default).string.isRequired,
+    text: (0, _propTypesDefault.default).string.isRequired,
+    primary: (0, _propTypesDefault.default).string.isRequired,
+    secondary: (0, _propTypesDefault.default).string.isRequired,
+    tertiary: (0, _propTypesDefault.default).string.isRequired,
+    quaternary: (0, _propTypesDefault.default).string.isRequired,
+    quinary: (0, _propTypesDefault.default).string.isRequired,
+    className: (0, _propTypesDefault.default).string.isRequired
+};
+exports.default = OpenInNew;
+var _c;
+$RefreshReg$(_c, "OpenInNew");
+
+  $parcel$ReactRefreshHelpers$2966.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","prop-types":"7wKI2","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"90pZJ":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$a378 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$a378.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _propTypes = require("prop-types");
+var _propTypesDefault = parcelHelpers.interopDefault(_propTypes);
+const ChevronUp = ({ text ="#00f" , className  })=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: className,
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
+            xmlns: "http://www.w3.org/2000/svg",
+            fill: text,
+            viewBox: "0 0 24 24",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("title", {
+                    children: "chevron-up"
+                }, void 0, false, {
+                    fileName: "src/images/ChevronUp.jsx",
+                    lineNumber: 8,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
+                    d: "M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z"
+                }, void 0, false, {
+                    fileName: "src/images/ChevronUp.jsx",
+                    lineNumber: 9,
+                    columnNumber: 9
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "src/images/ChevronUp.jsx",
+            lineNumber: 7,
+            columnNumber: 7
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/images/ChevronUp.jsx",
+        lineNumber: 6,
+        columnNumber: 5
+    }, undefined);
+};
+_c = ChevronUp;
+ChevronUp.propTypes = {
+    bg: (0, _propTypesDefault.default).string.isRequired,
+    text: (0, _propTypesDefault.default).string.isRequired,
+    primary: (0, _propTypesDefault.default).string.isRequired,
+    secondary: (0, _propTypesDefault.default).string.isRequired,
+    tertiary: (0, _propTypesDefault.default).string.isRequired,
+    quaternary: (0, _propTypesDefault.default).string.isRequired,
+    quinary: (0, _propTypesDefault.default).string.isRequired,
+    className: (0, _propTypesDefault.default).string.isRequired
+};
+exports.default = ChevronUp;
+var _c;
+$RefreshReg$(_c, "ChevronUp");
+
+  $parcel$ReactRefreshHelpers$a378.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","prop-types":"7wKI2","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"3biyS":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$5fb7 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$5fb7.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _propTypes = require("prop-types");
+var _propTypesDefault = parcelHelpers.interopDefault(_propTypes);
+const ChevronDown = ({ text ="#00f" , className  })=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: className,
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
+            xmlns: "http://www.w3.org/2000/svg",
+            fill: text,
+            viewBox: "0 0 24 24",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("title", {
+                    children: "chevron-down"
+                }, void 0, false, {
+                    fileName: "src/images/ChevronDown.jsx",
+                    lineNumber: 8,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
+                    d: "M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"
+                }, void 0, false, {
+                    fileName: "src/images/ChevronDown.jsx",
+                    lineNumber: 9,
+                    columnNumber: 9
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "src/images/ChevronDown.jsx",
+            lineNumber: 7,
+            columnNumber: 7
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/images/ChevronDown.jsx",
+        lineNumber: 6,
+        columnNumber: 5
+    }, undefined);
+};
+_c = ChevronDown;
+ChevronDown.propTypes = {
+    bg: (0, _propTypesDefault.default).string.isRequired,
+    text: (0, _propTypesDefault.default).string.isRequired,
+    primary: (0, _propTypesDefault.default).string.isRequired,
+    secondary: (0, _propTypesDefault.default).string.isRequired,
+    tertiary: (0, _propTypesDefault.default).string.isRequired,
+    quaternary: (0, _propTypesDefault.default).string.isRequired,
+    quinary: (0, _propTypesDefault.default).string.isRequired,
+    className: (0, _propTypesDefault.default).string.isRequired
+};
+exports.default = ChevronDown;
+var _c;
+$RefreshReg$(_c, "ChevronDown");
+
+  $parcel$ReactRefreshHelpers$5fb7.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","prop-types":"7wKI2","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"csdxi":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$4acf = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$4acf.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _propTypes = require("prop-types");
+var _propTypesDefault = parcelHelpers.interopDefault(_propTypes);
+const Certificate = ({ text ="#00f" , className =""  })=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: className,
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
+            xmlns: "http://www.w3.org/2000/svg",
+            fill: text,
+            viewBox: "0 0 24 24",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("title", {
+                    children: "certificate"
+                }, void 0, false, {
+                    fileName: "src/images/Certificate.jsx",
+                    lineNumber: 8,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
+                    d: "M4,3C2.89,3 2,3.89 2,5V15A2,2 0 0,0 4,17H12V22L15,19L18,22V17H20A2,2 0 0,0 22,15V8L22,6V5A2,2 0 0,0 20,3H16V3H4M12,5L15,7L18,5V8.5L21,10L18,11.5V15L15,13L12,15V11.5L9,10L12,8.5V5M4,5H9V7H4V5M4,9H7V11H4V9M4,13H9V15H4V13Z"
+                }, void 0, false, {
+                    fileName: "src/images/Certificate.jsx",
+                    lineNumber: 9,
+                    columnNumber: 9
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "src/images/Certificate.jsx",
+            lineNumber: 7,
+            columnNumber: 7
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/images/Certificate.jsx",
+        lineNumber: 6,
+        columnNumber: 5
+    }, undefined);
+};
+_c = Certificate;
+Certificate.propTypes = {
+    bg: (0, _propTypesDefault.default).string,
+    text: (0, _propTypesDefault.default).string,
+    primary: (0, _propTypesDefault.default).string,
+    secondary: (0, _propTypesDefault.default).string,
+    tertiary: (0, _propTypesDefault.default).string,
+    quaternary: (0, _propTypesDefault.default).string,
+    quinary: (0, _propTypesDefault.default).string,
+    className: (0, _propTypesDefault.default).string
+};
+exports.default = Certificate;
+var _c;
+$RefreshReg$(_c, "Certificate");
+
+  $parcel$ReactRefreshHelpers$4acf.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","prop-types":"7wKI2","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"lOjBx":[function(require,module,exports) {
 "use strict";
 var m = require("react-dom");
 var i = m.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
