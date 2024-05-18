@@ -4,6 +4,8 @@
 
 This project showcases the resume of Flavio13Lins in a visually appealing and interactive format using React. It provides an easy-to-navigate interface for viewing professional details, skills, and experiences.
 
+https://flavio13lins.github.io/FlavioResume/
+
 ## Features
 
 - Responsive design ensuring seamless viewing across devices.
