@@ -47,7 +47,13 @@ const quinaryColor = "#29374D";
 
 const App = () => {
   return (
-    <div id="main">
+    <div
+      id="main"
+      style={{
+        backgroundColor: "var(--background-color)",
+        color: "var(--text-color)",
+      }}
+    >
       <Header
         primaryColor={primaryColor}
         secondaryColor={secondaryColor}

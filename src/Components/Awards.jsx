@@ -6,14 +6,11 @@
 
 import React, { useState } from "react";
 
-import iconCertification from "../images/certificate.svg";
-import iconChevronUp from "../images/chevron-up.svg";
-import iconChevronDown from "../images/chevron-down.svg";
-import iconOpenNew from "../images/open-in-new.svg";
+import OpenInNew from "../images/OpenInNew";
+import ChevronUp from "../images/ChevronUp";
+import ChevronDown from "../images/ChevronDown";
 
-import image from "../images/background1.svg";
-
-const imageAltText = "Green, blue and yello abstract background";
+import Certificate from "../images/Certificate";
 
 const awardList = [
   {
@@ -79,12 +76,12 @@ const title = "My Awards";
 
 const Awards = () => {
   const [openDialog, setOpenDialog] = useState(-1);
+  const [hoverBtn, setHover] = useState(false);
 
   return (
-    <section className="padding" id="awards">
-      <img className="background" src={image} alt={imageAltText} />
+    <section className="background2" id="awards">
       <div className="myAwardsContent">
-        <h2>{title}</h2>
+        <h2 className="awardTitle">{title}</h2>
         <div className="awardList">
           {awardList.map((skill, index) => {
             return openDialog !== index ? (
@@ -98,14 +95,14 @@ const Awards = () => {
                 {openDialog !== index && (
                   <>
                     <div className="awardIconDate">
-                      <img className="iconCert" src={iconCertification} alt="CertificationIcon" />
+                      <Certificate className="iconCert" text="var(--text-color)" />
                       <h5>{skill.date}</h5>
                     </div>
                     <div style={{ alignSelf: "center" }}>
                       <h4 className="awardTitle">{skill.title}</h4>
                     </div>
                     <div>
-                      <img className="iconChevron" src={iconChevronDown} alt="ChevronDown" />
+                      <ChevronDown className="iconChevron" text="var(--text-color)" />
                     </div>
                   </>
                 )}
@@ -120,10 +117,13 @@ const Awards = () => {
                         setOpenDialog(-1);
                       }}
                     >
-                      <img className="iconCert" src={iconCertification} alt="CertificationIcon" />
+                      <Certificate className="iconCert" text="var(--text-color)" />
                       <h5>{skill.date}</h5>
                       {openDialog !== index && (
-                        <img className="iconChevron" src={iconChevronDown} alt="ChevronDown" />
+                        <OpenInNew
+                          className="iconOpenNewTab"
+                          text={hoverBtn ? "black" : "var(--text-color)"}
+                        />
                       )}
                     </button>
                     <div className="awardContent">
@@ -140,9 +140,16 @@ const Awards = () => {
                         <button
                           className="unbuttonize"
                           onClick={() => window.open(skill.link, "_blank")}
+                          onMouseOver={() => setHover(true)}
+                          onMouseLeave={() => setHover(false)}
+                          onFocus={() => setHover(true)}
                         >
                           <div className="btnIconTitle">
-                            <img className="iconOpenNewTab" src={iconOpenNew} alt="OpenNewTab" />
+                            <span>{hoverBtn}</span>
+                            <OpenInNew
+                              className="iconOpenNewTab"
+                              text={hoverBtn ? "black" : "var(--text-color)"}
+                            />
                             View Certificate
                           </div>
                         </button>
@@ -154,7 +161,7 @@ const Awards = () => {
                         setOpenDialog(-1);
                       }}
                     >
-                      <img className="iconChevron" src={iconChevronUp} alt="ChevronUp" />
+                      <ChevronUp className="iconChevron" text="var(--text-color)" />
                     </button>
                   </div>
                 )}

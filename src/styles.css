@@ -10,6 +10,14 @@
   --tertiary-color:#3CB371;
   --quaternary-color:#CBD5A9;
   --quinary-color:#29374D;
+  --background-color: white;
+  --text-color: black;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #1c1c1c;
+    --text-color: white
+  }
 }
 
 html,
@@ -37,19 +45,31 @@ section.min-height {
 }
 
 section.padding {
-  padding: 5rem 0;
+  padding: 3rem 0;
 }
 
-section img.background {
+.solidBackground {
+  padding: 4rem 0;
+  background-color: var(--background-color);
+}
+
+.homeBackground {
   height: 100%;
+  width: 100vmax;
+  background-size: cover;
   left: 50%;
   object-fit: cover;
-  pointer-events: none;
   position: absolute;
   top: 0;
   transform: translate(-50%, 0);
-  width: 100vmax;
-  z-index: -1;
+}
+
+.background1 {
+  background: url(images/background1.svg) repeat center center fixed;
+}
+
+.background2 {
+  background: url(images/background2.svg) repeat center center fixed;
 }
 
 h1 {
@@ -61,7 +81,7 @@ h1 {
 }
 
 h2 {
-  color: var(--quinary-color);
+  color: var(--text-color);
   font-size: 2rem;
   font-weight: 400;
   margin: 0;
@@ -141,7 +161,7 @@ a:active {
   color: var(--quaternary-color);
 }
 
-img.iconCert {
+.iconCert {
   color: var(--quaternary-color);
   height: 40px;
   width: 40px;
@@ -158,13 +178,13 @@ img.copyIcon {
   width: 15px;
 }
 
-img.iconChevron {
+.iconChevron {
   color: var(--quaternary-color);
   height: 24px;
   width: 24px;
 }
 
-img.iconOpenNewTab {
+.iconOpenNewTab {
   height: 16px;
   width: 16px;
 }
@@ -175,9 +195,9 @@ img.copyIcon:hover {
 }
 
 .aboutContainer {
-  background-color: white;
+  background-color: var(--background-color);
   width: 50%;
-  padding: 4rem;
+  padding: 1rem 4rem 2rem 4rem;
   margin: 3rem auto;
   text-align: center;
 }
@@ -245,8 +265,9 @@ img.copyIcon:hover {
 .box {
   width: calc(50% - 40px);
   border-radius: 3px;
+  color: var(--text-color);
   border: 1px solid var(--secondary-color);
-  background-color: white;
+  background-color: var(--background-color);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -257,14 +278,15 @@ img.copyIcon:hover {
 
 .box:hover {
   border: 1px solid var(--tertiary-color);
+  color: black;
   background-color: var(--quaternary-color);
 }
 
 .awardCardClosed {
   display: flex;
   flex-direction: row;
-  background-color: white;
-  /* color: var(--quaternary-color); */
+  background-color: var(--background-color);
+  color: var(--text-color);
   padding: 10px;
   margin: 5px 20px;
   border: var(--secondary-color) 1px solid;
@@ -276,8 +298,8 @@ img.copyIcon:hover {
 .awardCardOpened {
   display: flex;
   flex-direction: row;
-  background-color: white;
-  /* color: white; */
+  background-color: var(--background-color);
+  color: var(--text-color);
   padding: 10px;
   margin: 5px 20px;
   border-radius: 4px;
@@ -310,7 +332,7 @@ img.copyIcon:hover {
 
 .awardIconDate {
   display: flex;
-  /* color: white; */
+  color: var(--text-color);
   flex-direction: column;
   align-items: center;
   justify-content: start;
@@ -320,8 +342,8 @@ img.copyIcon:hover {
   padding: 2px 6px;
   border-radius: 4px;
   border: 1px solid var(--secondary-color);
-  background-color: white;
-
+  background-color: var(--background-color);
+  color: var(--text-color);
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -330,6 +352,7 @@ img.copyIcon:hover {
 .btnIconTitle:hover {
   cursor: pointer;
   border: 1px solid var(--tertiary-color);
+  color: black;
   background-color: var(--quaternary-color);
 }
 
@@ -341,19 +364,29 @@ img.copyIcon:hover {
 .myAwardsContent {
   background-color: transparent;
   width: 70%;
-  padding: 4rem;
+  padding: 1rem 4rem;
   margin: 3rem auto;
   text-align: center;
+}
+
+h2.awardTitle {
+  padding: 0 10px;
+  margin: 0 20px;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  border-radius: 3px;
+  border: 1px solid var(--secondary-color);
 }
 
 .awardTitle {
   padding: 0 10px;
   margin: 0;
-  /* color: white; */
+  color: var(--text-color);
 }
 
 .awardContent {
   width: auto;
+  color: var(--text-color);
 }
 
 .awardList {
@@ -384,7 +417,7 @@ img.copyIcon:hover {
 
 @media screen and (max-width: 768px) {
   .box {
-    width: calc(100% - 1rem); /* One project per row on smaller screens */
+    width: calc(100% - 1rem);
   }
   .skills-container {
     text-align: "left";
