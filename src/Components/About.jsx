@@ -6,11 +6,6 @@
 
 import React from "react";
 
-// import image from "../images/background2.svg";
-// import Background2 from "../images/Background2";
-
-// const imageAltText = "Green, blue and yello abstract background";
-
 const description =
   "I am a graduated B.Sc. in Computer Engineering, I have been working with software development for over 5 years. I am a IBM Certified: Artificial Intelligence Practitioner.";
 

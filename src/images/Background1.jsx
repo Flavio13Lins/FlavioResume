@@ -2,8 +2,6 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const Background1 = ({
-  // bg = "#00f",
-  //   primary = "#1C3112",
   secondary = "#0C4B41",
   tertiary = "#3CB371",
   quaternary = "#CBD5A9",

@@ -1,16 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const ChevronUp = ({
-  //   bg = "#00f",
-  text = "#00f",
-  //   primary = "#00f",
-  //   secondary = "#00f",
-  //   tertiary = "#00f",
-  //   quaternary = "#00f",
-  //   quinary = "#00f",
-  className,
-}) => {
+const ChevronUp = ({ text = "#00f", className }) => {
   return (
     <div className={className}>
       <svg xmlns="http://www.w3.org/2000/svg" fill={text} viewBox="0 0 24 24">
