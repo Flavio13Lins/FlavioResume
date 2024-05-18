@@ -15,6 +15,7 @@
 }
 @media (prefers-color-scheme: dark) {
   :root {
+    /* Not Necessary color for now */
     /* --primary-color:#301231;
     --secondary-color:#0c334b;
     --tertiary-color:#abb33c;
@@ -64,43 +65,17 @@ section.padding {
   background-size: cover;
   left: 50%;
   object-fit: cover;
-  /* pointer-events: none; */
   position: absolute;
   top: 0;
   transform: translate(-50%, 0);
-  /* z-index: -1; */
 }
 
-.background {
-  /* height: 100%;
-  width: 100vmax; */
-  /* max-height: 100%;
-  width: 200%; */
+.background1 {
+  background: url(images/background1.svg) repeat center center fixed;
+}
 
-  /* height: 100%;
-  width: 100%; */
-
-  /* min-height: 100%;
-  min-width: 1024px;
-  width: 100%;
-  height: auto;
-  position: relative;
-  top: 0;
-  left: 0;
-  z-index: -3; */
-  
-
-  /* background-size: cover;
-  left: 50%;
-  object-fit: cover;
-  pointer-events: none;
-  position: absolute;
-  top: 0;
-  transform: translate(-50%, 0); */
-
-
-  background: url(images/background2.svg) repeat center center fixed; 
-  /* z-index: -2; */
+.background2 {
+  background: url(images/background2.svg) repeat center center fixed;
 }
 
 h1 {
@@ -112,7 +87,6 @@ h1 {
 }
 
 h2 {
-  /* color: var(--quinary-color); */
   color: var(--text-color);
   font-size: 2rem;
   font-weight: 400;
@@ -449,7 +423,7 @@ h2.awardTitle {
 
 @media screen and (max-width: 768px) {
   .box {
-    width: calc(100% - 1rem); /* One project per row on smaller screens */
+    width: calc(100% - 1rem);
   }
   .skills-container {
     text-align: "left";

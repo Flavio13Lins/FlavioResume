@@ -79,16 +79,7 @@ const Awards = () => {
   const [hoverBtn, setHover] = useState(false);
 
   return (
-    <section className="background" id="awards">
-      {/* <Background1
-        className="background"
-        bg="var(--background-color)"
-        primary="var(--primary-color)"
-        secondary="var(--secondary-color)"
-        tertiary="var(--tertiary-color)"
-        quaternary="var(--quaternary-color)"
-        quinary="var(--quinary-color)"
-      /> */}
+    <section className="background2" id="awards">
       <div className="myAwardsContent">
         <h2 className="awardTitle">{title}</h2>
         <div className="awardList">

@@ -28,17 +28,7 @@ const detailOrQuote =
 
 const About = () => {
   return (
-    <section className="background" id="about">
-      {/* <Background2
-        className="background"
-        bg="var(--background-color)"
-        primary="var(--primary-color)"
-        secondary="var(--secondary-color)"
-        tertiary="var(--tertiary-color)"
-        quaternary="var(--quaternary-color)"
-        quinary="var(--quinary-color)"
-      /> */}
-      {/* <img className="background" src={image} alt={imageAltText} /> */}
+    <section className="background1" id="about">
       <div className="aboutContainer">
         <h2>About Myself</h2>
         <p className="large">{description}</p>
