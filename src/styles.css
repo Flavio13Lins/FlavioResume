@@ -15,12 +15,6 @@
 }
 @media (prefers-color-scheme: dark) {
   :root {
-    /* Not Necessary color for now */
-    /* --primary-color:#301231;
-    --secondary-color:#0c334b;
-    --tertiary-color:#abb33c;
-    --quaternary-color:#a9d5aa;
-    --quinary-color:#4d2933; */
     --background-color: #1c1c1c;
     --text-color: white
   }

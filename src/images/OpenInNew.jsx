@@ -1,16 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const OpenInNew = ({
-  //   bg = "#00f",
-  text = "#00f",
-  //   primary = "#00f",
-  //   secondary = "#00f",
-  //   tertiary = "#00f",
-  //   quaternary = "#00f",
-  //   quinary = "#00f",
-  className,
-}) => (
+const OpenInNew = ({ text = "#00f", className }) => (
   <div className={className}>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
       <title>open-in-new</title>
