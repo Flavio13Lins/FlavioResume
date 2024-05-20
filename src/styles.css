@@ -30,6 +30,22 @@ body {
   width: 100%;
 }
 
+.headerStyle {
+  text-align: center;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  background: var(--primary-color);
+  opacity: 0.5;
+  padding: 1rem;
+  top: 0;
+  min-width: 100%;
+  max-width: 100%;
+  z-index: 10;
+}
+
 div#main {
   display: flex;
   flex-direction: column;
@@ -236,11 +252,11 @@ img.copyIcon:hover {
 }
 
 .skills-container {
-  text-align: "left";
+  text-align: left;
   columns: 2;
-  font-size: "1.25rem";
-  margin: "2rem 3rem";
-  gap: "3rem";
+  font-size: 1.25rem;
+  margin: 2rem 3rem;
+  gap: 3rem;
 }
 
 .text-detail {
@@ -420,14 +436,14 @@ h2.awardTitle {
     width: calc(100% - 1rem);
   }
   .skills-container {
-    text-align: "left";
+    text-align: left;
     columns: 1;
-    font-size: "1.25rem";
-    margin: "2rem 3rem";
-    gap: "3rem";
+    font-size: 1.25rem;
+    margin: 2rem 3rem;
+    gap: 3rem;
   }
   .text-detail {
-    padding: "0";
+    padding: 0;
     font-size: 15px;
   }
   p.large {
@@ -444,6 +460,10 @@ h2.awardTitle {
 }
 
 @media screen and (max-width: 576px) {
+  .headerStyle {
+    padding: 1rem 8px;
+    gap: 10px;
+  }
   h1 {
     font-size: 32px;
     font-weight: 800;
