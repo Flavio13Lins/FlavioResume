@@ -7,23 +7,11 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const Header = (props) => {
-  const { primaryColor } = props;
+const Header = () => {
 
   return (
     <div
-      style={{
-        position: "fixed",
-        display: "flex",
-        justifyContent: "center",
-        gap: "2rem",
-        background: primaryColor,
-        opacity: 0.5,
-        padding: "1rem",
-        top: 0,
-        width: "100%",
-        zIndex: 10,
-      }}
+      className="headerStyle"
     >
       <a className="header-link" href="#home">
         Home
